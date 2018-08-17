@@ -71,6 +71,9 @@
 .bottom a {
   color: white !important;
 }
+.middle table tr {
+  width: 100%;
+}
 @keyframes overlay {
   0% {background-color: rgba(0,0,0,0)}
   100% {background-color: rgba(0,0,0,0.7)}
@@ -91,10 +94,10 @@
 }
 
 .top {
-  height: 20%;
+  height: 45%;
 }
 .middle {
-  height: 70%;
+  height: 45%;
 }
 .bottom {
   height: 10%;
@@ -115,7 +118,9 @@
   .top div {
     font-size: 13vw;
   }
-  
+  #date {
+    font-size: 10vw;
+  }
   .bottom div {
     font-size: 7vw;
   }
@@ -134,7 +139,9 @@
   .top div {
     font-size: 10vw;
   }
-  
+  #date {
+    font-size: 10vw;
+  }
   .bottom div {
     font-size: 7vw;
   }
@@ -154,15 +161,17 @@
   .top div {
     font-size: 7vw;
   }
-  
+  #date {
+    font-size: 5vw;
+  }
   .bottom div {
     font-size: 3vw;
   }
   .top {
-    height: 20%;
+    height: 40%;
   }
   .middle {
-    height: 55%;
+    height: 35%;
   }
   .bottom {
     height: 25%;

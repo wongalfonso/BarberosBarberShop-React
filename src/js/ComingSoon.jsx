@@ -10,12 +10,15 @@ export default class ComingSoon extends Component {
           <div className="row overlay-text-row">
             <div className='overlay-text'>
               <div className="col-lg-12 col-xs-12 overlay-text-columns top">
-                <div className = 'coming'>
+                <div>
                   Coming Soon
                 </div>
               </div>
 
               <div className='col-lg-12 col-xs-12 overlay-text-columns middle'>
+                <div id = 'date'>
+                  Sept, 3rd 2018
+                </div>
               </div>
 
               <div className='col-lg-12 col-xs-12 overlay-text-columns bottom'>

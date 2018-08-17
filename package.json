@@ -29,6 +29,7 @@
   },
   "dependencies": {
     "bootstrap": "^3.3.7",
+    "jquery": "^3.3.1",
     "morgan": "^1.9.0",
     "postcss-loader": "^3.0.0",
     "precss": "^3.1.2",

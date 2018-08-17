@@ -1,3 +1,5 @@
+@import './variables.scss';
+
 .html, body {
   width: 100%;
   height: 100%;
@@ -7,7 +9,166 @@
 #main-logo {
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   height: 100vh;
   width: 100%;
-  overflow-y: hidden;
+  overflow: hidden;
+}
+
+.overlay:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 2;
+  animation-name: overlay;
+  animation-duration: 3s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+  -webkit-animation-name: overlay;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-delay: 3s;
+  -webkit-animation-fill-mode: forwards;
+}
+.overlay-container {
+  position: absolute;
+  top:0;
+  left: 0;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+.overlay-text {  
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  font-family: 'Muli', sans-serif;
+  color: white;
+  text-align: center;
+  text-shadow: 4px 4px rgba(0,0,0,0.4);
+  animation-name: overlay-text;
+  animation-duration: 3s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+  -webkit-animation-name: overlay-text;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-delay: 3s;
+  -webkit-animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.overlay-padding {
+  position: relative;
+}
+.overlay-text-row {
+  position: relative;
+}
+.bottom a {
+  color: white !important;
+}
+@keyframes overlay {
+  0% {background-color: rgba(0,0,0,0)}
+  100% {background-color: rgba(0,0,0,0.7)}
+}
+
+@-webkit-keyframes overlay {
+  0% {background-color: rgba(0,0,0,0)}
+  100% {background-color: rgba(0,0,0,0.7)}
+}
+
+@keyframes overlay-text {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@-webkit-keyframes overlay-text {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.top {
+  height: 20%;
+}
+.middle {
+  height: 70%;
+}
+.bottom {
+  height: 10%;
+}
+.top div {
+  height: 100%;
+}
+.bottom div {
+  height: 50%;
+}
+@media only screen and (max-width: $xs) {
+  .overlay-padding {
+    height: 10%;
+  }
+  .overlay-text-row {
+    height: 80%;
+  }
+  .top div {
+    font-size: 13vw;
+  }
+  
+  .bottom div {
+    font-size: 7vw;
+  }
+}
+
+@media only screen and (min-width: $xs + 1) and (max-width: $lg) {
+  .overlay-padding {
+    height: 5%;
+  }
+  .overlay-text {
+    line-height: 1;
+  }
+  .overlay-text-row {
+    height: 90%;
+  }
+  .top div {
+    font-size: 10vw;
+  }
+  
+  .bottom div {
+    font-size: 7vw;
+  }
+
+}
+
+@media only screen and (min-width: $lg + 1) {
+  .overlay-padding {
+    height: 20%;
+  }
+  .overlay-text {
+    line-height: 1;
+  }
+  .overlay-text-row {
+    height: 60%;
+  }
+  .top div {
+    font-size: 7vw;
+  }
+  
+  .bottom div {
+    font-size: 3vw;
+  }
+  .top {
+    height: 20%;
+  }
+  .middle {
+    height: 55%;
+  }
+  .bottom {
+    height: 25%;
+  }
+  .top div {
+    height: 100%;
+  }
+
 }

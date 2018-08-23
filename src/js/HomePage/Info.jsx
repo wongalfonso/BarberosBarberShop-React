@@ -2,6 +2,12 @@ import React, { Component } from 'react';
 import googleMaps from './../../../public/images/googleMaps.jpg';
 
 export default class Info extends Component {
+  
+
+  schedule() {
+    window.location = 'https://www.schedulicity.com/scheduling/TBB65N'
+  }
+
   render() {
     return (
       <div className='fullPage'>

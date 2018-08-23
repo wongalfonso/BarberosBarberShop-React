@@ -1,4 +1,7 @@
 @import './variables.scss';
+@import './splash.scss';
+@import './home.scss';
+
 
 .html, body {
   width: 100%;
@@ -6,178 +9,45 @@
   padding: 0;
   margin: 0;
 }
-#main-logo {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh;
-  width: 100%;
-  overflow: hidden;
+
+body {
+  background: linear-gradient(to right, rgb(10, 10, 10), black, rgb(20, 20, 20));
+  background: -moz-linear-gradient(left,  rgb(10,10,10), black, rgb(20,20,20));
+  -moz-background-color:  black;
+  background-color: -webkit-gradient(linear, left, from(rgb(10, 10, 10)), to(black), to(rgb(20, 20, 20)));
 }
 
-.overlay:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  z-index: 2;
-  animation-name: overlay;
-  animation-duration: 3s;
-  animation-delay: 3s;
-  animation-fill-mode: forwards;
-  -webkit-animation-name: overlay;
-  -webkit-animation-duration: 3s;
-  -webkit-animation-delay: 3s;
-  -webkit-animation-fill-mode: forwards;
-}
-.overlay-container {
-  position: absolute;
-  top:0;
-  left: 0;
-  overflow: hidden;
-  height: 100vh;
-  width: 100vw;
-}
-.overlay-text {  
-  position: relative;
-  width: 100%;
-  height: 100%;
-  z-index: 10;
-  font-family: 'Muli', sans-serif;
-  color: white;
-  text-align: center;
-  text-shadow: 4px 4px rgba(0,0,0,0.4);
-  animation-name: overlay-text;
-  animation-duration: 3s;
-  animation-delay: 3s;
-  animation-fill-mode: forwards;
-  -webkit-animation-name: overlay-text;
-  -webkit-animation-duration: 3s;
-  -webkit-animation-delay: 3s;
-  -webkit-animation-fill-mode: forwards;
-  opacity: 0;
-}
-
-.overlay-padding {
-  position: relative;
-}
-.overlay-text-row {
-  position: relative;
-}
-.bottom a {
-  color: white !important;
-}
-.middle table tr {
-  width: 100%;
-}
-@keyframes overlay {
-  0% {background-color: rgba(0,0,0,0)}
-  100% {background-color: rgba(0,0,0,0.7)}
-}
-
-@-webkit-keyframes overlay {
-  0% {background-color: rgba(0,0,0,0)}
-  100% {background-color: rgba(0,0,0,0.7)}
-}
-
-@keyframes overlay-text {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
-}
-@-webkit-keyframes overlay-text {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
-}
-
-.top {
-  height: 45%;
-}
-.middle {
-  height: 45%;
-}
-.bottom {
-  height: 10%;
-}
-.top div {
+.fullPage {
   height: 100%;
 }
-.bottom div {
-  height: 50%;
-}
-@media only screen and (max-width: $xs) {
-  .overlay-padding {
-    height: 10%;
-  }
-  .overlay-text-row {
-    height: 80%;
-  }
-  .top div {
-    font-size: 13vw;
-  }
-  #date {
-    font-size: 10vw;
-  }
-  .bottom div {
-    font-size: 7vw;
+
+
+
+@media only screen and (max-width: $md - 1) {
+  body {
+    background: linear-gradient(to right, rgb(10, 10, 10), black, rgb(20, 20, 20));
+    background: -moz-linear-gradient(to right, rgb(10, 10, 10), black, rgb(20, 20, 20));
   }
 }
 
-@media only screen and (min-width: $xs + 1) and (max-width: $lg) {
-  .overlay-padding {
-    height: 5%;
+
+@media only screen and (min-width: $md) and (max-width: $lg - 1) {
+  body {
+    background: linear-gradient(to right, rgb(10, 10, 10), black, rgb(20, 20, 20));
+    background: -moz-linear-gradient(to right, rgb(10, 10, 10), black, rgb(20, 20, 20));
   }
-  .overlay-text {
-    line-height: 1;
-  }
-  .overlay-text-row {
-    height: 90%;
-  }
-  .top div {
-    font-size: 10vw;
-  }
-  #date {
-    font-size: 10vw;
-  }
-  .bottom div {
-    font-size: 7vw;
-  }
+}
+
+
+@media only screen and (min-width: $lg) and (max-width: $xl - 1) {
 
 }
 
-@media only screen and (min-width: $lg + 1) {
-  .overlay-padding {
-    height: 20%;
-  }
-  .overlay-text {
-    line-height: 1;
-  }
-  .overlay-text-row {
-    height: 60%;
-  }
-  .top div {
-    font-size: 7vw;
-  }
-  #date {
-    font-size: 5vw;
-  }
-  .bottom div {
-    font-size: 3vw;
-  }
-  .top {
-    height: 40%;
-  }
-  .middle {
-    height: 35%;
-  }
-  .bottom {
-    height: 25%;
-  }
-  .top div {
-    height: 100%;
-  }
 
+
+@media screen and (min-width: $xl)  {
+  .fullPage {
+    height: 100vh;
+  }
+ 
 }

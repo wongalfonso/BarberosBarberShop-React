@@ -1,0 +1,168 @@
+.carousel-inner {
+  height: 100vh;
+}
+.carousel-inner:after {
+  position:absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0,0,0,.5);
+  z-index: 10;
+}
+.carousel-control-prev, .carousel-control-next {
+  z-index: 20;
+}
+
+.infoContainer {
+  height: 100%;
+}
+
+.table-dark {
+  background-color: rgb(1, 1, 1);
+}
+.table tr {
+  color: $infoColor;
+}
+
+#hoursTitle {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+#locationTitle {
+  font-size: 2rem;
+  
+}
+.hours, #locationTitle {
+  color: $infoColor;
+}
+.infoTable {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.map img {
+  width: 100%;
+}
+
+.map {
+  height: 100%;
+}
+.left {
+  text-align: left;
+}
+.right {
+  text-align: right;
+}
+.infoTable {
+  color: $infoColor;
+}
+.infoTable td {
+  min-width: 2rem;
+  word-wrap: break-word;
+  font-size: 1.1rem;
+}
+.infoTable td a {
+  color: $infoColor + 1;
+}
+
+@media screen and (max-width: $md - 1) {
+  .carousel-item active {
+    height: 100%;
+  }
+  .infoTopRow {
+    margin-top: 3rem;
+  }
+  #barberosHeader {    
+    color: $infoColor;
+    border-bottom: solid 2px $infoColor;
+  }
+  .infoMiddleRow {
+    height: 100%;
+  }
+  .hours {
+    height: 50%;
+  }
+  .map {
+    height: 50%;
+  }
+  .infoBotRow{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (min-width: $md) and (max-width: $lg -1) {
+  #barberosHeader {
+    line-height: 200px;
+    color: $infoColor;    
+  }
+
+  .infoTopRow {
+    height: 20%;
+  }
+  .infoMiddleRow {
+    height: 60%;
+  }
+  .hours {
+    position: relative;
+  }
+  .table {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50%;    
+    margin-top: 25%;
+  }
+  .map img:hover {
+    opacity: .8;
+  }
+
+  #apptBtn {    
+    width: 20rem;
+    border-radius: 8px;
+  }
+  
+  .infoBotRow {
+    height: 20%;
+  }
+  .btnCol {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: $lg) and (max-width: $xl -1) {
+
+}
+
+@media screen and (min-width: $xl) {
+  #barberosHeader {
+    line-height: 100px;
+    color: $infoColor;    
+  }
+  .hours {
+    position: relative;
+  }
+  .hoursTable {
+    position: relative;
+    margin-top: 0%;
+  }
+  .map img:hover {
+    opacity: .8;
+  }
+  
+  #apptBtn {   
+    margin-top: 2rem; 
+    width: 20rem;
+    border-radius: 8px;
+  }
+  
+  .infoBotRow {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+}

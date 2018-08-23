@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ComingSoon from './js/ComingSoon';
+import App from './app';
 import './css/style.scss';
 
-ReactDOM.render(<ComingSoon/>, document.getElementById('app'));
+ReactDOM.render(<App/>, document.getElementById('app'));

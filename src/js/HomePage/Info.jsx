@@ -3,95 +3,99 @@ import googleMaps from './../../../public/images/googleMaps.jpg';
 
 export default class Info extends Component {
   
+  componentDidMount() {
+    const page = document.getElementById('info-page');
+    page.onmouseenter = () => this.props.enter('info');
+    page.onmouseleave = () => this.props.exit('info');
+  }
 
   schedule() {
-    window.location = 'https://www.schedulicity.com/scheduling/TBB65N'
+    window.location = 'https://www.schedulicity.com/scheduling/TBB65N' 
   }
 
   render() {
     return (
-      <div className='fullPage'>
-        <div className="container infoContainer">
-          <div className="row infoTopRow">
+      <div className='full-page' id = 'info-page'>
+        <div className="container info-container">
+
+          <div className="row info-top-row">
             <div className="col-12 text-center">
-              <h1 id='barberosHeader'>The Barberos Barber Shop</h1>
+              <img src = './images/title-white.png' id = 'info-title'/>
             </div>
           </div>
-          <div className="row infoMiddleRow">
-            <div className="col-md-4 col-sm-12 text-center hours">
-              <span id='hoursTitle'>HOURS</span>
-              <table className='table hoursTable'>
+          
+          <div className="row info-middle-row">
+
+            <div className="col-md-4 col-sm-12 text-center info-hours">
+              <img src = './images/hours-title.png' id = 'info-hours-title'/>
+              <table className='table info-table'>
                 <tbody>
                   <tr>
-                    <td scope='row'>Monday</td>
-                    <td>10am - 7pm</td>
+                    <td className ='days'>Monday</td>
+                    <td className = 'hours'>10am - 7pm</td>
                   </tr>
                   <tr>
-                    <td scope='row'>Tuesday</td>
-                    <td>10am - 7pm</td>
+                    <td className ='days'>Tuesday</td>
+                    <td className = 'hours'>10am - 7pm</td>
                   </tr>
                   <tr>
-                    <td scope='row'>Wednesday</td>
-                    <td>10am - 7pm</td>
+                    <td className ='days'>Wednesday</td>
+                    <td className = 'hours'>10am - 7pm</td>
                   </tr>
                   <tr>
-                    <td scope='row'>Thursday</td>
-                    <td>10am - 7pm</td>
+                    <td className ='days'>Thursday</td>
+                    <td className = 'hours'>10am - 7pm</td>
                   </tr>
                   <tr>
-                    <td scope='row'>Friday</td>
-                    <td>10am - 7pm</td>
+                    <td className ='days'>Friday</td>
+                    <td className = 'hours'>10am - 7pm</td>
                   </tr>
                   <tr>
-                    <td scope='row'>Saturday</td>
-                    <td>10am - 7pm</td>
+                    <td className ='days'>Saturday</td>
+                    <td className = 'hours'>10am - 7pm</td>
                   </tr>
                   <tr>
-                    <td scope='row'>Sunday</td>
-                    <td>closed</td>
+                    <td className ='days'>Sunday</td>
+                    <td className = 'hours'>closed</td>
                   </tr>
                 </tbody>
               </table>
             </div>
-            <div className="col-md-8 col-sm-12 text-center map">
-              <span id='locationTitle'>Location</span>
+            <div className="col-md-8 col-sm-12 text-center info-map">
               <a href='https://www.google.com/maps/search/?api=1&query=2637 UniversityAve,San Diego,Ca,92104' target='_blank'>
                 <img src='./images/googleMaps.jpg' />
               </a>
             </div>
           </div>
-          <div className="row infoBotRow">
+
+          <div className="row info-bottom-row">
             <div className="col-12 text-center">
-              <table className='infoTable'>
+              <table className='info-location-table'>
                 <tbody>
                   <tr>
-                    <td className='left'>Address: </td>
-                    <td></td>
-                    <td className='right'><a href='https://www.google.com/maps/search/?api=1&query=2637 UniversityAve,San Diego,Ca,92104' target='_blank'>2637 University Ave Unit B, San Diego, Ca 92104</a></td>
+                    <td className='info-shop'><a href='https://www.google.com/maps/search/?api=1&query=2637 UniversityAve,San Diego,Ca,92104' target='_blank'>2637 University Ave Unit B, San Diego, CA 92104</a></td>
                   </tr>
                   <tr>
-                    <td className='left'>Call: </td>
-                    <td></td>
-                    <td className='right'><a href='tel:+16193664149'>1 (619) 366-4149</a></td>
+                    <td className='info-shop'><a href='tel:+16193664149'>1 (619) 366-4149</a></td>
                   </tr>
                   <tr>
-                    <td className='left'>Email: </td>
-                    <td></td>
-                    <td className='right'><a href='mailto:Thebarberos619@gmail.com' target='_blank'>Thebarberos619@gmail.com</a></td>
+                    <td className='info-shop'><a href='mailto:Thebarberos619@gmail.com' target='_blank'>Thebarberos619@gmail.com</a></td>
                   </tr>
                 </tbody>
               </table>
             </div>
 
-            <div className="col-xl-12 text-center btnCol">
+            <div className="col-xl-12 text-center info-btn-col">
               <button 
-                id='apptBtn' 
-                className='btn btn-danger form-control form-control-lg'
+                id='info-appt-btn' 
+                className='btn form-control'
+                target = "_blank"
                 onClick = {this.schedule}>
                 Schedule an Appointment
               </button>
             </div>
           </div>
+          
         </div>
       </div>
     )

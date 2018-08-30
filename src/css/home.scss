@@ -17,59 +17,58 @@
   z-index: 20;
 }
 
-.infoContainer {
+.info-container {
   height: 100%;
 }
+#info-title {
+  width: 600px;
+}
+.table td {
+  border-top: inherit;
+}
+#info-hours-title {
+  width: 200px;
+  border-bottom: solid $infoColor 2px;
+}
 
-.table-dark {
-  background-color: rgb(1, 1, 1);
-}
-.table tr {
+.days {
   color: $infoColor;
+  text-align: right;
 }
-
-#hoursTitle {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-#locationTitle {
-  font-size: 2rem;
-  
-}
-.hours, #locationTitle {
+.hours {
   color: $infoColor;
+  text-align: left;
 }
-.infoTable {
+.info-map img {
+  width: 100%;
+}
+.info-shop {
+  text-align: center;
+}
+.info-location-table {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
-.map img {
-  width: 100%;
-}
-
-.map {
-  height: 100%;
-}
-.left {
-  text-align: left;
-}
-.right {
-  text-align: right;
-}
-.infoTable {
-  color: $infoColor;
-}
-.infoTable td {
+.info-location-table td {
   min-width: 2rem;
   word-wrap: break-word;
   font-size: 1.1rem;
 }
-.infoTable td a {
+.info-location-table td a {
   color: $infoColor + 1;
 }
+#info-appt-btn {
+  background: $gradient;
+  color: black;
+  width: 400px;
+  height: 50px;
+}
+#info-appt-btn:hover {
+  background: $hover;
+}
 
-@media screen and (max-width: $md - 1) {
+@media screen and (max-width: $sm - 1) {
   .carousel-item active {
     height: 100%;
   }
@@ -77,8 +76,8 @@
     margin-top: 3rem;
   }
   #barberosHeader {    
-    color: $infoColor;
-    border-bottom: solid 2px $infoColor;
+    background: $gradient;
+    border-bottom: solid 2px $gradient;
   }
   .infoMiddleRow {
     height: 100%;
@@ -89,13 +88,16 @@
   .map {
     height: 50%;
   }
-  .infoBotRow{
+  .info-bottom-row{
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
+  #info-appt-btn {    
+    border-radius: 8px;
+  }
 }
 
-@media screen and (min-width: $md) and (max-width: $lg -1) {
+@media screen and (min-width: $sm) and (max-width: $md -1) {
   #barberosHeader {
     line-height: 200px;
     color: $infoColor;    
@@ -121,10 +123,7 @@
     opacity: .8;
   }
 
-  #apptBtn {    
-    width: 20rem;
-    border-radius: 8px;
-  }
+  
   
   .infoBotRow {
     height: 20%;
@@ -134,11 +133,11 @@
   }
 }
 
-@media screen and (min-width: $lg) and (max-width: $xl -1) {
+@media screen and (min-width: $md) and (max-width: $lg -1) {
 
 }
 
-@media screen and (min-width: $xl) {
+@media screen and (min-width: $lg) and (max-width: $xl -1) {
   #barberosHeader {
     line-height: 100px;
     color: $infoColor;    
@@ -160,9 +159,29 @@
     border-radius: 8px;
   }
   
-  .infoBotRow {
+  .info-bottom-row {
     margin-top: 2rem;
     margin-bottom: 2rem;
   }
 
+}
+@media screen and (min-width: $xl) {
+  .full-page {
+    height: 100vh;
+  }
+  .info-top-row {
+    height: 20%;
+  }
+  .info-middle-row {
+    height: 50%;
+  }
+  .info-bottom-row {
+    height: 20%;
+  }
+  .info-hours img {
+    height: 10%;
+  }
+  .info-table {
+    height: 60%;
+  }
 }

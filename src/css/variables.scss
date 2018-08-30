@@ -4,6 +4,12 @@ $md: 992px;
 $lg: 1200px;
 $xl: 1500px;
 $infoColor: rgb(194, 193, 193);
+$darkGold:  rgba(126, 90, 67, 0.708);
+$lightGold: rgb(204,153,102);
+$darkGoldHover: rgb(126, 90, 67);
+$lightGoldHover: rgb(205, 165, 126);
+$gradient: -webkit-linear-gradient(left, $darkGold, $lightGold, $darkGold);
+$hover: -webkit-linear-gradient(left, $darkGoldHover, $lightGoldHover, $darkGoldHover);
 
 $retina: (-webkit-min-device-pixel-ratio: 2), (min-resolution:192dpi);
 

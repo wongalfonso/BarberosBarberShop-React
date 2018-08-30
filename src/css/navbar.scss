@@ -1,0 +1,44 @@
+.navBar {
+  position: fixed;
+  right: 2%;
+  top: 50%;
+  z-index: 30;
+  list-style: none;
+  text-align: right;
+  margin-top: -150px;
+  margin-bottom: auto;
+}
+.navBar li img {
+  width: 75px;
+  opacity: .5;
+  margin: .4rem;
+}
+
+#info-active, #top-active, #about-active{
+  width: 125px;
+  height: 125px;
+  transition: all .2s;
+}
+.pages {
+  color: $infoColor !important;
+}
+
+@media screen and (max-width: $sm) {
+  .navBar {
+    display: none;
+  }
+}
+
+@media screen and (min-width: $md) and (max-width: $lg -1px) {
+  .navBar {
+    display: none;
+  }
+}
+
+@media screen and (min-width: $lg) and (max-width: $xl - 1) {
+  
+}
+
+@media screen and (min-width: $xl) {
+
+}

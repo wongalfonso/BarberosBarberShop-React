@@ -9,5 +9,7 @@ app.use(express.static('public'));
 app.use(express.static('dist'));
 
 
-
+app.get('*', (req, res) => {
+  res.sendFile(path.resolve('public', 'index.html'));
+});
 module.exports = app;

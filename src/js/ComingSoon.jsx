@@ -1,41 +1,25 @@
 import React, { Component } from 'react';
+import { Redirect } from 'react-router';
+import Loading from './Loading';
 
 export default class ComingSoon extends Component {
+  constructor() {
+    super();
+    this.state = {
+      image: false
+    }
+  }
+  componentDidMount() {
+    setTimeout(() => this.setState({ image: true }), 4000)
+  }
+
   render() {
+
+    if (this.state.image === true) return <Redirect to='/home' />;
     return (
       <div className='overlay'>
         <img src='./images/LogoIcons.svg' id='main-logo' />
-        <div className="container overlay-container">
-          <div className="row overlay-padding"></div>
-          <div className="row overlay-text-row">
-            <div className='overlay-text'>
-              <div className="col-lg-12 col-xs-12 overlay-text-columns top">
-                <div>
-                  Coming Soon
-                </div>
-              </div>
-
-              <div className='col-lg-12 col-xs-12 overlay-text-columns middle'>
-                <div id = 'date'>
-                  Sept, 3rd 2018
-                </div>
-              </div>
-
-              <div className='col-lg-12 col-xs-12 overlay-text-columns bottom'>
-                <a href = 'https://www.google.com/maps/search/?api=1&query=2637 UniversityAve,San Diego,Ca,92104' target='_blank'>
-                  <div className="address">
-                    2637 University Ave Unit B
-                  </div>
-                  <div className="city">
-                    San Diego, California 92104
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="row overlay-padding"></div>
-        </div>
-
+        <div className="overlay-container"></div>
       </div>
     )
   }

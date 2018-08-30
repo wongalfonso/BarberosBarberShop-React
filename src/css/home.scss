@@ -184,4 +184,12 @@
   .info-table {
     height: 60%;
   }
+
+  .info-hours {
+    animation-name: hours;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+
+  
 }

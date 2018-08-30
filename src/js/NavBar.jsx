@@ -4,7 +4,6 @@ import React, { Component } from 'react';
 export default class NavBar extends Component {
   render() {
     const { active, scroll } = this.props;
-    console.log(active);
     return (
       <div>
         <ul className='navBar'>
@@ -34,18 +33,18 @@ export default class NavBar extends Component {
             }
           </li>
 
-          {/* <li>
+          <li>
             {
               (active === 'about') ?
                 <a className = 'pages'> 
                   Projects
-                  <img id = 'about-active' src={Active} onClick = {() => scroll.bind(this, 'project-page')}/>
+                  <img id = 'about-active' src='./images/mustacheGold.png' onClick = {() => scroll.bind(this, 'about-page')}/>
                 </a> :
                 <a >
-                  <img src={Menu} onClick = {scroll.bind(this, 'about-page')}/>
+                  <img src='./images/mustacheWhite.png' onClick = {scroll.bind(this, 'about-page')}/>
                 </a>
             }
-          </li> */}
+          </li>
         </ul>
       </div>
     )

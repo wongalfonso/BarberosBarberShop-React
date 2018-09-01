@@ -6,7 +6,9 @@ export default class Carousel extends Component {
     const page = document.getElementById('splash-carousel');
     page.onmouseenter = () => this.props.enter('carousel');
     page.onmouseleave = () => this.props.exit('carousel');
+    window.scroll = function() {scrollFunction()} 
   }
+  
 
   render() {
     return (
@@ -20,19 +22,29 @@ export default class Carousel extends Component {
         </ol>
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <img className="d-block w-100" src='./images/BalboaPark.jpg' alt="First slide" />
+            <img className="d-block w-100 carousel-lg" src='./images/logo-color-lg.png' alt="First slide"/>
+            <img className="d-block w-100 carousel-md" src='./images/logo-color-md.jpg' alt="First slide" />
+            <img className="d-block w-100 carousel-sm" src='./images/logo-color-sm.jpg' alt="First slide" />
           </div>
           <div className="carousel-item">
-            <img className="d-block w-100" src='./images/Downtown.jpg' alt="Second slide" />
+            <img className="d-block w-100 carousel-lg" src='./images/north-park-sign-lg.jpg' alt="Second slide" />
+            <img className="d-block w-100 carousel-md" src='./images/north-park-sign-md.jpg' alt="Second slide" />
+            <img className="d-block w-100 carousel-sm" src='./images/north-park-sign-sm.jpg' alt="Second slide" />
           </div>
           <div className="carousel-item">
-            <img className="d-block w-100" src='./images/PointLomaCemetary.jpg' alt="Third slide" />
+            <img className="d-block w-100 carousel-lg" src='./images/barber-pole-lg.jpg' alt="Third slide" />
+            <img className="d-block w-100 carousel-md" src='./images/barber-pole-sm.jpg' alt="Third slide" />
+            <img className="d-block w-100 carousel-sm" src='./images/barber-pole-sm.jpg' alt="Third slide" />
           </div>
           <div className="carousel-item">
-            <img className="d-block w-100" src='./images/CoronadoBridge.jpg' alt="Fourth slide" />
+            <img className="d-block w-100 carousel-lg" src='./images/barber-chair-lg.jpg' alt="Fourth slide" />
+            <img className="d-block w-100 carousel-md" src='./images/barber-chair-sm.jpg' alt="Fourth slide" />
+            <img className="d-block w-100 carousel-sm" src='./images/barber-chair-sm.jpg' alt="Fourth slide" />
           </div>
-          <div className="carousel-item">
-            <img className="d-block w-100" src='./images/OceanBeachPier.jpg' alt="Fifth slide"/>
+          <div className="carousel-item ">
+            <img className="d-block w-100 carousel-lg" src='./images/barber-shop-lg.jpg' alt="Fifth slide"/>
+            <img className="d-block w-100 carousel-md" src='./images/chair-sm.jpg' alt="Fifth slide"/>
+            <img className="d-block w-100 carousel-sm" src='./images/chair-sm.jpg' alt="Fifth slide"/>
           </div>
         </div>
         <a className="carousel-control-prev" href="#splash-carousel" role="button" data-slide="prev">

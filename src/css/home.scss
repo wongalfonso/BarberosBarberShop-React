@@ -20,14 +20,20 @@
 .info-container {
   height: 100%;
 }
-#info-title {
+#info-title-lg {
   width: 600px;
+  border-bottom: white solid 2px;
+}
+#info-title-sm {
+  width: 100%;
+  border-bottom: white solid 2px;
 }
 .table td {
   border-top: inherit;
 }
 #info-hours-title {
   width: 200px;
+  height: 50px;
   border-bottom: solid $infoColor 2px;
 }
 
@@ -63,24 +69,46 @@
   color: black;
   width: 400px;
   height: 50px;
+  border-radius: 8px;
 }
 #info-appt-btn:hover {
   background: $hover;
 }
+.map img:hover {
+  opacity: .8;
+}
+.info-bottom-row {
+  margin: 2em 0;
+}
+.info-btn-col {
+  margin: 2em 0;
+}
 
 @media screen and (max-width: $sm - 1) {
+  .carousel-lg {
+    display: none !important;
+  }
+  .carousel-md {
+    display: none !important;
+  }
+  .carousel-sm {
+    height: 100vh;
+  }
   .carousel-item active {
     height: 100%;
   }
   .infoTopRow {
     margin-top: 3rem;
   }
-  #barberosHeader {    
-    background: $gradient;
-    border-bottom: solid 2px $gradient;
-  }
-  .infoMiddleRow {
+
+  .info-middle-row {
     height: 100%;
+  }
+  #info-title-lg {
+    display: none;
+  }
+  #info-title-sm {
+    margin-bottom: 1em;
   }
   .hours {
     height: 50%;
@@ -88,59 +116,108 @@
   .map {
     height: 50%;
   }
-  .info-bottom-row{
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-  }
-  #info-appt-btn {    
-    border-radius: 8px;
+  #info-appt-btn {  
+    margin: 1em 0;  
+    width: 100%;
   }
 }
 
-@media screen and (min-width: $sm) and (max-width: $md -1) {
-  #barberosHeader {
-    line-height: 200px;
-    color: $infoColor;    
+@media screen and (min-width: $sm) and (max-width: $md - 1) {
+  .carousel-lg {
+    display: none !important;
+  }
+  .carousel-sm {
+    display: none !important;
   }
 
-  .infoTopRow {
-    height: 20%;
+  .full-page {
+    height: 100%;
   }
-  .infoMiddleRow {
-    height: 60%;
+  .info-top-row {
+    height: 13em;
+  }
+  #info-title-sm {
+    display: none;
   }
   .hours {
     position: relative;
   }
-  .table {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 50%;    
-    margin-top: 25%;
-  }
-  .map img:hover {
-    opacity: .8;
-  }
+ 
+}
 
-  
-  
-  .infoBotRow {
+@media screen and (min-width: $md) and (max-width: $lg - 1) {
+  .full-page {
+    height: 100vh;
+  }
+  .carousel-lg {
+    display: none !important;
+  }
+  .carousel-md {
+    min-height: 100vh;
+  }
+  .carousel-sm {
+    display: none !important;
+  }
+  #info-title-sm {
+    display: none;
+  }
+  #info-title-lg {
+    margin-bottom: 2em;
+  }
+  .navBar {
+    display: none;
+  }
+  .info-middle-row {
+    border: 2px solid $infoColor;
+  }
+  .info-map {
+    padding: 0;
+    text-align: right;
+  }
+  .info-map img {
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: $lg) and (max-width: $xl - 1) {
+  .full-page {
+    height: 100vh;
+  }
+  .carousel-sm {
+    display: none !important;
+  }
+  .carousel-md {
+    display: none !important;
+  }
+  .carousel-lg {
+    min-height: 100vh;
+    // min-width: 100%;
+  }
+  .info-top-row {
     height: 20%;
+    margin-bottom: 1rem;
   }
-  .btnCol {
-    text-align: center;
+  .info-middle-row {
+    height: 45%;
+    margin-bottom: 2em;
   }
-}
-
-@media screen and (min-width: $md) and (max-width: $lg -1) {
-
-}
-
-@media screen and (min-width: $lg) and (max-width: $xl -1) {
-  #barberosHeader {
-    line-height: 100px;
-    color: $infoColor;    
+  .info-bottom-row {
+    height: 25%;
+  }
+  #info-title-sm {
+    display: none;
+  }
+  #info-title-lg {
+    padding-top: 1em;
+    width: 400px;
+    border-bottom: 2px solid white;
+  }
+  .info-map {
+    text-align: left !important;
+  }
+  .info-map img {
+    height: 100%;
+    width: 80%;
   }
   .hours {
     position: relative;
@@ -153,21 +230,28 @@
     opacity: .8;
   }
   
-  #apptBtn {   
+  #info-appt-btn {   
     margin-top: 2rem; 
     width: 20rem;
     border-radius: 8px;
-  }
-  
-  .info-bottom-row {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
   }
 
 }
 @media screen and (min-width: $xl) {
   .full-page {
     height: 100vh;
+  }
+  .carousel-sm {
+    display: none !important;
+  }
+  .carousel-md {
+    display: none !important;
+  }
+  .carousel-lg {
+    // height: 100vh;
+  }
+  #info-title-sm {
+    display: none;
   }
   .info-top-row {
     height: 20%;
@@ -176,6 +260,7 @@
     height: 50%;
   }
   .info-bottom-row {
+    margin: 0;
     height: 20%;
   }
   .info-hours img {
@@ -191,5 +276,5 @@
     animation-fill-mode: forwards;
   }
 
-  
+
 }

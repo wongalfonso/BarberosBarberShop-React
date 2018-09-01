@@ -29,13 +29,14 @@ export default class Info extends Component {
 
           <div className="row info-top-row">
             <div className="col-12 text-center">
-              <img src = './images/title-white.png' id = 'info-title'/>
+              <img src = './images/title-large-screen.png' id = 'info-title-lg'/>
+              <img src = './images/title-small-screen.png' id = 'info-title-sm'/>
             </div>
           </div>
           
           <div className="row info-middle-row">
 
-            <div className="col-md-4 col-sm-12 text-center info-hours">
+            <div className="col-lg-4 col-sm-12 text-center info-hours">
               <img src = './images/hours-title.png' id = 'info-hours-title'/>
               <table className='table info-table'>
                 <tbody>
@@ -70,7 +71,7 @@ export default class Info extends Component {
                 </tbody>
               </table>
             </div>
-            <div className="col-md-8 col-sm-12 text-center info-map">
+            <div className="col-lg-8 col-sm-12 text-center info-map">
               <a href='https://www.google.com/maps/search/?api=1&query=2637 UniversityAve,San Diego,Ca,92104' target='_blank'>
                 <img src='./images/googleMaps.jpg' />
               </a>

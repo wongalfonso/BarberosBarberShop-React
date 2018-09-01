@@ -14,10 +14,11 @@ export default class HomePage extends Component {
     this.mouseEnter = this.mouseEnter.bind(this);
     this.mouseExit = this.mouseExit.bind(this);
     this.scroll = this.scroll.bind(this);
+    this.scroller = this.scroller.bind(this);
   }
 
-  componentDidMount() {
-
+  componentDidUpdate() {
+    window.onscroll = () => this.scroller();
   }
 
   mouseEnter(page) {
@@ -47,9 +48,18 @@ export default class HomePage extends Component {
   }
 
 
+  scroller() {
+    console.log('yes');
+    const home = document.getElementById('home-page');
+    const carousel = document.getElementById('splash-carousel');
+    const info = document.getElementById('info-page');
+    console.log(carousel.scrollHeight);
+  }
+  
   render() {
+    
     return (
-      <div className='home-page'>
+      <div className='home-page' id = 'home-page'>
         {/* <Loading/> */}
         <NavBar
           active={this.state.enter}

@@ -1,0 +1,27 @@
+
+
+.footer {
+  padding: 1em 0;
+  color: $infoColor;
+  border-top: $infoColor solid 2px;
+  background: rgba(194, 193, 193, .3);
+  font-weight: bold;
+  padding-bottom: 0;
+}
+.footer-icons {
+  width: 100px;
+}
+.footer-span {
+  border-bottom: 2px $infoColor solid;
+  font-size: 2em;
+}
+.footer-row {
+  padding-bottom: 15px;
+  border-bottom: 8px $infoColor solid;
+}
+
+@media screen and (min-width: $xl ) {
+  .footer-row {
+    text-align: center;
+  }
+}

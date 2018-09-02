@@ -16,10 +16,26 @@
 .carousel-control-prev, .carousel-control-next {
   z-index: 20;
 }
-
-.info-container {
-  height: 100%;
+#carousel-btn {
+  position: absolute;
+  left: 50%;
+  z-index: 50;
+  background-color: transparent;
+  border: solid 2px $infoColor;
+  color: $infoColor;
+  bottom: 10%;
+  width: 326px;
+  height: 150px;
+  font-size: 2.5em;
+  transform: translateX(-163px);
 }
+#info-page {
+  position: relative;
+  background-image: url('./../../public/images/color-logo-icons-black.png');
+  background-size: cover;
+  background-position: center;
+}
+
 #info-title-lg {
   width: 600px;
   border-bottom: white solid 2px;
@@ -84,6 +100,7 @@
   margin: 2em 0;
 }
 
+
 @media screen and (max-width: $sm - 1) {
   .carousel-lg {
     display: none !important;
@@ -96,6 +113,14 @@
   }
   .carousel-item active {
     height: 100%;
+  }
+  #carousel-btn {
+    bottom: 15%;
+    transform: translateX(- 100px);
+    background-color: transparent;
+    font-size: 1.1em;
+    height: 50px;
+    width: 200px;
   }
   .infoTopRow {
     margin-top: 3rem;
@@ -142,6 +167,14 @@
   .hours {
     position: relative;
   }
+  #carousel-btn {
+    bottom: 10%;
+    width: 300px;
+    height: 125px;
+    font-size: 2em;
+    transform: translateX(-150px);
+    border: 3px solid $infoColor;
+  }
  
 }
 
@@ -153,11 +186,23 @@
     display: none !important;
   }
   .carousel-md {
-    min-height: 100vh;
+    min-height: 100%;    
   }
   .carousel-sm {
     display: none !important;
   }
+  .info-top-row {
+    height: 15%;
+  }
+  .info-middle-row {
+    border: 2px solid $infoColor;
+    height: 70%;
+  }
+  .info-bottom-row {
+    height: 15%;
+    margin: 1em 0;
+  }
+
   #info-title-sm {
     display: none;
   }
@@ -167,9 +212,6 @@
   .navBar {
     display: none;
   }
-  .info-middle-row {
-    border: 2px solid $infoColor;
-  }
   .info-map {
     padding: 0;
     text-align: right;
@@ -177,11 +219,22 @@
   .info-map img {
     height: 100%;
   }
+  #carousel-btn {
+    bottom: 10%;
+    width: 326px;
+    height: 150px;
+    font-size: 2.5em;
+    transform: translateX(-163px);
+    border: solid 4px $infoColor;
+  }
 }
 
 @media screen and (min-width: $lg) and (max-width: $xl - 1) {
   .full-page {
     height: 100vh;
+  }
+  .carousel-inner:after {
+    background: rgba(0,0,0,.7);
   }
   .carousel-sm {
     display: none !important;
@@ -190,8 +243,12 @@
     display: none !important;
   }
   .carousel-lg {
+    width: 1280px !important;
     min-height: 100vh;
-    // min-width: 100%;
+  }
+  #carousel-btn {
+    height: 110px;  
+    border: 4px solid $infoColor;  
   }
   .info-top-row {
     height: 20%;
@@ -241,20 +298,27 @@
   .full-page {
     height: 100vh;
   }
+  .carousel-inner:after {
+    background: rgba(0,0,0,.7);
+  }
+  .info-container {
+    height: 100%;
+  }
   .carousel-sm {
     display: none !important;
   }
   .carousel-md {
     display: none !important;
   }
-  .carousel-lg {
-    // height: 100vh;
+  #carousel-btn {
+    height: 115px;
+    border: 4px solid $infoColor;
   }
   #info-title-sm {
     display: none;
   }
   .info-top-row {
-    height: 20%;
+    height: 25%;
   }
   .info-middle-row {
     height: 50%;

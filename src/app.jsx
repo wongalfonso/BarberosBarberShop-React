@@ -9,7 +9,7 @@ export default class App extends Component {
       <Router>
         <Switch>
           <Route exact path='/' component={ComingSoon} />
-          <Route exact path='/home' component={HomePage} />
+          <Route path='/home' component={HomePage} />
         </Switch>
       </Router>
     )

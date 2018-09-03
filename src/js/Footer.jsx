@@ -6,26 +6,21 @@ export default class Footer extends Component {
       <div className='footer'>
         <div className="container footer-container">
           <div className="row footer-row">
-            <div className="col-lg-12 text-center">
+            <div className="col-lg-12 text-center footer-title">
               <span className = 'footer-span'>FOLLOW US!</span>
             </div>
 
-            <div className="col-4 text-center">
+            <div className="col-12 text-center">
               <a href='https://www.instagram.com/thebarberosbarbershop/' target = '_blank'>
                 <img src='./images/insta-icon.png' className = 'footer-icons' />
               </a>
-            </div>
-
-            <div className="col-4 text-center">
               <a href = ''>
                 <img src='./images/facebook-icon.png' className = 'footer-icons' id = 'facebook-icon'/>
               </a>
-            </div>
-
-            <div className="col-4 text-center">
               <a href=''>
                 <img src='./images/yelp-icon.png' className = 'footer-icons'/>
               </a>
+
             </div>
           </div>
         </div>

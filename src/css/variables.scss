@@ -8,6 +8,8 @@ $darkGold:  rgba(126, 90, 67, 0.708);
 $lightGold: rgb(204,153,102);
 $darkGoldHover: rgb(126, 90, 67);
 $lightGoldHover: rgb(205, 165, 126);
+$backgroundGradient: -webkit-gradient(linear, left, from(rgb(10, 10, 10)), to(black), to(rgb(20, 20, 20)));
+$footerGradient: -webkit-gradient(linear, top, from(rgb(10, 10, 10)), to(rgb(20, 20, 20)));
 $gradient: -webkit-linear-gradient(left, $darkGold, $lightGold, $darkGold);
 $hover: -webkit-linear-gradient(left, $darkGoldHover, $lightGoldHover, $darkGoldHover);
 

@@ -10,7 +10,7 @@ export default class ComingSoon extends Component {
     }
   }
   componentDidMount() {
-    setTimeout(() => this.setState({ image: true }), 4000)
+    setTimeout(() => this.setState({ image: true }), 2000)
   }
 
   render() {

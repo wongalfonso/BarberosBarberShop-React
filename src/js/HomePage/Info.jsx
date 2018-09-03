@@ -48,7 +48,7 @@ export default class Info extends Component {
                   </tr>
                   <tr>
                     <td className='days'>Wednesday</td>
-                    <td className='hours'>10am - 7pm</td>
+                    <td className='hours'>10am - 6pm</td>
                   </tr>
                   <tr>
                     <td className='days'>Thursday</td>
@@ -60,17 +60,17 @@ export default class Info extends Component {
                   </tr>
                   <tr>
                     <td className='days'>Saturday</td>
-                    <td className='hours'>10am - 7pm</td>
+                    <td className='hours'>10am - 6pm</td>
                   </tr>
                   <tr>
                     <td className='days'>Sunday</td>
-                    <td className='hours'>closed</td>
+                    <td className='hours'>9:30am - 12pm</td>
                   </tr>
                 </tbody>
               </table>
             </div>
             <div className="col-xl-8 col-lg-12 text-center info-map">
-              <a href='https://www.google.com/maps/search/?api=1&query=2637 UniversityAve,San Diego,Ca,92104' target='_blank'>
+              <a href='https://www.google.com/maps/search/?api=1&query=2637 B UniversityAve,San Diego,Ca,92104' target='_blank'>
                 <img src='./images/googleMaps.jpg' />
               </a>
             </div>
@@ -81,7 +81,7 @@ export default class Info extends Component {
               <table className='info-location-table'>
                 <tbody>
                   <tr>
-                    <td className='info-shop'><a href='https://www.google.com/maps/search/?api=1&query=2637 UniversityAve,San Diego,Ca,92104' target='_blank'>2637 University Ave Unit B, San Diego, CA 92104</a></td>
+                    <td className='info-shop'><a href='https://www.google.com/maps/search/?api=1&query=2637 B UniversityAve,San Diego,Ca,92104' target='_blank'>2637 B University Ave, San Diego, CA 92104</a></td>
                   </tr>
                   <tr>
                     <td className='info-shop'><a href='tel:+16193664149'>1 (619) 366-4149</a></td>

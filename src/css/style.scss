@@ -16,7 +16,7 @@ body {
   background: linear-gradient(to right, rgb(10, 10, 10), black, rgb(20, 20, 20));
   background: -moz-linear-gradient(left,  rgb(10,10,10), black, rgb(20,20,20));
   -moz-background-color:  black;
-  background-color: -webkit-gradient(linear, left, from(rgb(10, 10, 10)), to(black), to(rgb(20, 20, 20)));
+  background-color: $backgroundGradient;
 }
 
 .fullPage {

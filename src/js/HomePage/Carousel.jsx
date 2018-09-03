@@ -55,7 +55,14 @@ export default class Carousel extends Component {
           <span className="carousel-control-next-icon" aria-hidden="true"></span>
           <span className="sr-only">Next</span>
         </a>
-        <button id = 'carousel-btn' onClick = {this.props.schedule}>Schedule Now</button>
+
+        
+          <div id = 'carousel-title'>
+            <p>The Barberos</p>
+            <p> BarberShop</p> 
+          </div>
+          <button id = 'carousel-btn' onClick =   {this.props.schedule}>Schedule Now</button>
+        
       </div>
     )
   }

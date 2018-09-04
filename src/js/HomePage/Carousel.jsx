@@ -56,11 +56,6 @@ export default class Carousel extends Component {
           <span className="sr-only">Next</span>
         </a>
 
-        
-          <div id = 'carousel-title'>
-            <p>The Barberos</p>
-            <p> BarberShop</p> 
-          </div>
           <button id = 'carousel-btn' onClick =   {this.props.schedule}>Schedule Now</button>
         
       </div>

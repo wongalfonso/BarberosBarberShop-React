@@ -84,7 +84,7 @@ export default class Info extends Component {
                     <td className='info-shop'><a href='https://www.google.com/maps/search/?api=1&query=2637 B UniversityAve,San Diego,Ca,92104' target='_blank'>2637 B University Ave, San Diego, CA 92104</a></td>
                   </tr>
                   <tr>
-                    <td className='info-shop'><a href='tel:+16193664149'>1 (619) 366-4149</a></td>
+                    <td className='info-shop'><a href='tel:+16193664149'>1 (619) 246-3830</a></td>
                   </tr>
                   <tr>
                     <td className='info-shop'><a href='mailto:Thebarberos619@gmail.com' target='_blank'>Thebarberos619@gmail.com</a></td>

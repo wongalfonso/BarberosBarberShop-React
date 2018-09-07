@@ -8,18 +8,45 @@
   margin-top: -150px;
   margin-bottom: auto;
 }
-.navBar li img {
-  width: 75px;
+
+#top-menu, #info-menu, #bio-menu {
+  opacity: .5;
+  margin: 1.2em;
+}
+#top-menu:hover, #info-menu:hover, #bio-menu:hover {
+  opacity:.7;
+}
+#top-menu {
+  width: 50px;
+}
+#bio-menu {
+  width: 50px;
+}
+#info-menu {
+  width: 20px;
+}
+#info-active, #bio-active, #top-active {
+  margin: 1.2em 2.2em;
+  transition: all .2s;
+}
+#info-active {
+  width: 35px;
+}
+#bio-active {
+  width: 80px;
+  height: 25px;
+}
+#top-active {
+  width: 60px;
+  margin-right: 2.2rem;
+  transition: all 2s;
+}
+#top-menu {
+  width: 50px;
   opacity: .5;
   margin: .4rem;
 }
 
-#info-active, #top-active, #about-active{
-  height: 75px;
-  width: 45px;
-  margin-right: 2.2rem;
-  transition: all .2s;
-}
 .pages {
   color: $infoColor !important;
 }

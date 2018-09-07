@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import googleMaps from './../../../public/images/googleMaps.jpg';
 
 export default class Info extends Component {
 
@@ -33,7 +32,6 @@ export default class Info extends Component {
           </div>
 
           <div className="row info-middle-row">
-
             <div className="col-xl-4 col-lg-12 text-center info-hours">
               <img src='./images/hours-title.png' id='info-hours-title' />
               <table className='table info-table'>
@@ -71,7 +69,7 @@ export default class Info extends Component {
             </div>
             <div className="col-xl-8 col-lg-12 text-center info-map">
               <a href='https://www.google.com/maps/search/?api=1&query=2637 B UniversityAve,San Diego,Ca,92104' target='_blank'>
-                <img src='./images/googleMaps.jpg' />
+                <img src='./images/google-maps.jpg' />
               </a>
             </div>
           </div>

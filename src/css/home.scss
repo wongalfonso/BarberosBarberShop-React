@@ -16,18 +16,29 @@
 .carousel-control-prev, .carousel-control-next {
   z-index: 20;
 }
-// #carousel-title {
-//   position: absolute;
-//   color: $infoColor;
-//   text-align: center;
-//   font-size: 5em;
-//   z-index: 50;
-//   left: 50%;
-//   top: 50%;
-// }
+
+#top-bar {
+  position: absolute;
+  z-index: 50;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 225px;
+  background: rgba(255,255,255,.1);
+}
+#barberos-logo {
+  position: absolute;
+  top:0;
+  left:50%;
+  
+  transform: translateX(-250px);
+  opacity: .7;
+  z-index:50;
+}
 #carousel-btn {
   position: absolute;
   left: 50%;
+  top: 50%;
   z-index: 50;
   background-color: transparent;
   border: solid 2px $infoColor;
@@ -50,7 +61,7 @@
   border-bottom: white solid 2px;
 }
 #info-title-sm {
-  width: 100%;
+  width: 90%;
   border-bottom: white solid 2px;
 }
 .table td {
@@ -108,7 +119,42 @@
 .info-btn-col {
   margin: 2em 0;
 }
-
+.about-header {
+  font-size: 2em;
+  color: $infoColor;
+  margin-bottom: 2em;
+}
+.bio-container .row {
+  margin-bottom: 1em;
+}
+.bio-page {
+  color: $infoColor;
+}
+.bio-header {
+  text-align: center;
+  font-size: 1.5em; 
+  margin-bottom: 1em;
+  color: $infoColor;
+}
+.bio-text {
+  margin-top: 1em;
+  line-height: 1.2em;
+  text-align: center;
+  font-size: 1.2em;
+  color: $infoColor;
+}
+.bio-photo-div {
+  text-align: right;
+  padding-right: 0;
+}
+.bio-photo-div .bio-photo {
+  width: 250px;
+  border-radius: 20px;
+}
+.bio-row {
+  background-color: rgba(255,255,255,.1);
+  border-radius: 20px;
+}
 
 @media screen and (max-width: $sm - 1) {
   .carousel-lg {
@@ -123,7 +169,15 @@
   .carousel-item active {
     height: 100%;
   }
+  #top-bar {
+    height: 135px;
+  }
+  #barberos-logo {
+    width: 300px;
+    transform: translateX(-150px);
+  }
   #carousel-btn {
+    top: 80%;
     bottom: 15%;
     transform: translateX(- 100px);
     background-color: transparent;
@@ -142,7 +196,8 @@
     display: none;
   }
   #info-title-sm {
-    margin-bottom: 1em;
+    height: 130px;
+    margin-bottom: 3em;
   }
   .hours {
     height: 50%;
@@ -154,6 +209,9 @@
     margin: 1em 0;  
     width: 100%;
   }
+  .bio-photo-div {
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: $sm) and (max-width: $md - 1) {
@@ -163,7 +221,13 @@
   .carousel-sm {
     display: none !important;
   }
-
+  #top-bar {
+    height: 270px;
+  }
+  #barberos-logo {
+    width: 600px;
+    transform: translateX(-300px);
+  }
   .full-page {
     height: 100%;
   }
@@ -177,11 +241,11 @@
     position: relative;
   }
   #carousel-btn {
-    bottom: 10%;
-    width: 300px;
+    top: 80%;
+    width: 400px;
     height: 125px;
     font-size: 2em;
-    transform: translateX(-150px);
+    transform: translateX(-200px);
     border: 3px solid $infoColor;
   }
  
@@ -199,6 +263,13 @@
   }
   .carousel-sm {
     display: none !important;
+  }
+  #top-bar {
+    height: 406px;
+  }
+  #barberos-logo {
+    width: 900px;
+    transform: translateX(-450px);
   }
   .info-top-row {
     height: 15%;
@@ -229,11 +300,11 @@
     height: 100%;
   }
   #carousel-btn {
-    bottom: 10%;
-    width: 326px;
+    top: 80%;
+    width: 450px;
     height: 150px;
     font-size: 2.5em;
-    transform: translateX(-163px);
+    transform: translateX(-225px);
     border: solid 4px $infoColor;
   }
 }
@@ -254,15 +325,24 @@
   }
   .carousel-lg {
     width: 1280px !important;
+    max-width: 1280px;
     min-height: 100vh;
   }
+  #top-bar {
+    height:270px;
+    max-height: 225px;
+  }
+  #barberos-logo {
+    max-width: 500px;
+    transform: translateX(-250px);
+  }
   #carousel-btn {
+    top: 75%;
     height: 110px;  
-    opacity: .4;
   }
   #carousel-btn:hover {
-    border: 4px solid $infoColor; 
-    opacity: 1; 
+    background-color: $infoColor;
+    color: black;
   }
   .info-top-row {
     margin-bottom: 4rem;
@@ -322,6 +402,11 @@
   }
   #carousel-title {
     transform: translate(-230px, -135px);
+  }
+  #top-bar {}
+  #barberos-logo {
+    height: 225px;
+    width: 500px;
   }
   #carousel-btn {
     height: 115px;

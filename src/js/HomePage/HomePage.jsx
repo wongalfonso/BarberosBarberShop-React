@@ -3,6 +3,7 @@ import Carousel from './Carousel';
 import Info from './Info';
 import Loading from '../Loading';
 import NavBar from '../NavBar';
+import Bio from './Bio';
 import Footer from '../Footer';
 
 export default class HomePage extends Component {
@@ -37,7 +38,7 @@ export default class HomePage extends Component {
     let page;
     if (target === '' || target === 'splash-carousel') { page = 'carousel' }
     if (target === 'info-page') { page = 'info' }
-    // if (target === 'projectPage') { page = 'project' }
+    if (target === 'bio-page') { page = 'bio' }
     if (this.state.enter === page) {
       return ;
     } else {
@@ -77,6 +78,10 @@ export default class HomePage extends Component {
           enter={this.mouseEnter}
           exit={this.mouseExit}
           schedule = {this.schedule} />
+        <Bio
+          enter={this.mouseEnter}
+          exit={this.mouseExit}
+          />
         <Footer />
       </div>
     )

@@ -22,8 +22,8 @@ export default class Carousel extends Component {
         </ol>
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <img className="d-block w-100 carousel-lg" src='./images/barberos-logo-no-text.png' alt="First slide"/>
-            <img className="d-block w-100 carousel-md" src='./images/logo-color-md.jpg' alt="First slide" />
+            <img className="d-block carousel-lg" src='./images/color-logo-icons-black.png' id = 'logos-png' alt="First slide"/>
+            <img className="d-block w-100 carousel-md" src='./images/color-logo-icons-black.png' alt="First slide" />
             <img className="d-block w-100 carousel-sm" src='./images/logo-color-sm.jpg' alt="First slide" />
           </div>
           <div className="carousel-item">
@@ -56,6 +56,7 @@ export default class Carousel extends Component {
           <span className="sr-only">Next</span>
         </a>
         <div id = 'top-bar'>
+
           <img src = './images/barberos-full-text.png' id = 'barberos-logo'/>
         </div>
           <button id = 'carousel-btn' onClick =   {this.props.schedule}>Schedule Now</button>

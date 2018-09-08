@@ -20,8 +20,8 @@ export default class Bio extends Component {
             </div>
           </div>
 
-          <div className="row">
-            <div className="col-md-12 col-lg-6">
+          <div className="row bio-row">
+            <div className="col-md-12 col-lg-6 bio-columns">
               <div className="row">
                 <div className="col-12">
                   <div className="bio-header">
@@ -29,7 +29,7 @@ export default class Bio extends Component {
                   </div>
                 </div>
               </div>
-              <div className="row bio-row">
+              <div className="row bio-text-row">
                 <div className="col-lg-6">
                   <p className='bio-text'>
                     I am a highly skilled barber with 9+ years of experience. I have always loved doing hair and I specialize in hot towel shaves. I have a passion for doing this wether its a fade or a scissor haircut, you can be confident that I will always deliver quality work.
@@ -41,8 +41,8 @@ export default class Bio extends Component {
               </div>
             </div>
           </div>
-          <div className="row">
-            <div className="col-md-12 col-lg-6">
+          <div className="row bio-row">
+            <div className="col-md-12 col-lg-6 bio-columns">
               <div className="row">
                 <div className="col-12">
                   <div className="bio-header">
@@ -50,7 +50,7 @@ export default class Bio extends Component {
                   </div>
                 </div>
               </div>
-              <div className="row bio-row">
+              <div className="row bio-text-row">
                 <div className="col-lg-6">
                   <p className='bio-text'>
                     Born and raised in the Bay Area, I have been a barber for the better half of my adult life. Giving that clean cut has always been an art that I have always appreciated. That is I put my heart and soul into my craft to try and make you look good!

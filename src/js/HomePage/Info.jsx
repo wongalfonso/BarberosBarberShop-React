@@ -17,7 +17,7 @@ export default class Info extends Component {
 
   }
 
-  
+
 
   render() {
     return (
@@ -32,6 +32,14 @@ export default class Info extends Component {
           </div>
 
           <div className="row info-middle-row">
+          <div className="col-12 text-center">
+            <h2 style = {{color: 'white'}}><u>The Barber Shop</u></h2>
+          </div>
+            <div className="col-lg-12 text-center">
+              <div className='about-shop'>
+                This is a new Barber Shop located in the North Park area of San Diego. At the Barberos Barbershop, we take pride in our clean haircuts and traditional hot towel shaves. Our mission is to provide top of the line customer service that is why every client gets a personalized consultation to make sure we give you what you want. Come visit us and experience it for yourself!
+          </div>
+            </div>
             <div className="col-xl-4 col-lg-12 text-center info-hours">
               <img src='./images/hours-title.png' id='info-hours-title' />
               <table className='table info-table'>

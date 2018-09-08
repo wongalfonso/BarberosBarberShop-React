@@ -57,8 +57,13 @@
 }
 
 #info-title-lg {
-  width: 600px;
+  width: 500px;
   border-bottom: white solid 2px;
+}
+.about-shop {
+  font-size: 1.2em;
+  color: $infoColor;
+  line-height: 2em;
 }
 #info-title-sm {
   width: 90%;
@@ -151,11 +156,17 @@
   width: 250px;
   border-radius: 20px;
 }
-.bio-row {
+.bio-text-row { 
   background-color: rgba(255,255,255,.1);
   border-radius: 20px;
 }
-
+.bio-row {
+  text-align: center;
+}
+.bio-columns {
+  margin-right: auto;
+  margin-left: auto;
+}
 @media screen and (max-width: $sm - 1) {
   .carousel-lg {
     display: none !important;
@@ -188,7 +199,9 @@
   .infoTopRow {
     margin-top: 3rem;
   }
-
+  .about-shop {
+    margin-bottom: 1em;
+  }
   .info-middle-row {
     height: 100%;
   }
@@ -196,7 +209,7 @@
     display: none;
   }
   #info-title-sm {
-    height: 130px;
+    width: 250px;
     margin-bottom: 3em;
   }
   .hours {
@@ -420,14 +433,13 @@
     display: none;
   }
   .info-top-row {
-    height: 25%;
+    height: 20%;
   }
   .info-middle-row {
-    height: 50%;
+    height: 60%;
   }
   .info-bottom-row {
     margin: 0;
-    height: 20%;
   }
   .info-hours img {
     height: 10%;
@@ -435,7 +447,9 @@
   .info-table {
     height: 60%;
   }
-
+  .info-btn-col {
+    margin: 0;
+  }
   .info-hours {
     animation-name: hours;
     animation-duration: 2s;

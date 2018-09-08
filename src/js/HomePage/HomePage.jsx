@@ -34,16 +34,17 @@ export default class HomePage extends Component {
     })
   }
   scroll(target) {
-    console.log(target);
+    // console.log(target);
     let page;
     if (target === '' || target === 'splash-carousel') { page = 'carousel' }
     if (target === 'info-page') { page = 'info' }
     if (target === 'bio-page') { page = 'bio' }
+    if (target === 'services-page') { page = 'services' }
     if (this.state.enter === page) {
       return ;
     } else {
       var id = document.getElementById(target).offsetTop
-      console.log(id);
+      // console.log(id);
       window.scrollTo({ top: id, behavior: 'smooth' })
       this.setState({ enter: page })
     }
@@ -51,11 +52,11 @@ export default class HomePage extends Component {
 
 
   scroller() {
-    console.log('yes');
+    // console.log('yes');
     const home = document.getElementById('home-page');
     const carousel = document.getElementById('splash-carousel');
     const info = document.getElementById('info-page');
-    console.log(carousel.scrollHeight);
+    // console.log(carousel.scrollHeight);
   }
   schedule() {
     window.location = 'https://www.schedulicity.com/scheduling/TBB65N'

@@ -46,6 +46,18 @@ export default class NavBar extends Component {
                 </a>
             }
           </li>
+          <li>
+            {
+              (active === 'services') ?
+                <a className = 'pages'> 
+                  Barbers
+                  <img id = 'services-active' src='./images/knife-gold.png' onClick = {() => scroll.bind(this, 'services-page')}/>
+                </a> :
+                <a >
+                  <img id = 'services-menu' src='./images/knife-white.png' onClick = {scroll.bind(this, 'services-page')}/>
+                </a>
+            }
+          </li>
         </ul>
       </div>
     )

@@ -11,21 +11,20 @@ export default class Bio extends Component {
   render() {
     return (
       <div className='full-page' id='bio-page'>
-        <div className="container bio-container">
-          <div className="row">
+          <div className="row bio-top-row">
             <div className="col-12 text-center">
               <div className="about-header">
                 Barbers
               </div>
             </div>
           </div>
-
+        <div className="container bio-container">
           <div className="row bio-row">
             <div className="col-md-12 col-lg-6 bio-columns">
               <div className="row">
                 <div className="col-12">
                   <div className="bio-header">
-                    Omar
+                    <h3><u>Omar</u></h3>                    
                   </div>
                 </div>
               </div>
@@ -42,21 +41,22 @@ export default class Bio extends Component {
             </div>
           </div>
           <div className="row bio-row">
-            <div className="col-md-12 col-lg-6 bio-columns">
+            <div className="col-md-12 col-lg-10 bio-columns">
               <div className="row">
                 <div className="col-12">
                   <div className="bio-header">
-                    Noah
+                    <h3><u>Noah</u></h3>
                   </div>
                 </div>
               </div>
               <div className="row bio-text-row">
-                <div className="col-lg-6">
+                <div className="col-lg-9">
+                  <span>Starting Sept. 23rd</span>
                   <p className='bio-text'>
-                    Born and raised in the Bay Area, I have been a barber for the better half of my adult life. Giving that clean cut has always been an art that I have always appreciated. That is I put my heart and soul into my craft to try and make you look good!
+                  Born and raised in Northern California, the Bay Area. I first became interested in cutting hair when my older cousin would cut my hair as a kid. When I got into high school I then started cutting my own hair. Soon enough I started cutting my brother's, cousin's,  friends and friends of friends hair. Giving that clean cut has always been an art that I have always appreciated. I put my heart and soul into my craft and to try to make you look good, as well as feel good! To me barbering is more than just cutting hair, but creating relationships and giving the next person a boost of confidence!
                   </p>
                 </div>
-                <div className="col-lg-6 bio-photo-div">
+                <div className="col-lg-3 bio-photo-div">
                     <img src='./images/noah-profile-photo.jpg' className='bio-photo' />
                 </div>
               </div>

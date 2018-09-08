@@ -22,15 +22,13 @@ export default class Info extends Component {
   render() {
     return (
       <div className='full-page' id='info-page'>
-        <div className="container info-container">
-
           <div className="row info-top-row">
             <div className="col-12 text-center">
               <img src='./images/title-large-screen.png' id='info-title-lg' />
               <img src='./images/title-small-screen.png' id='info-title-sm' />
             </div>
           </div>
-
+        <div className="container info-container">
           <div className="row info-middle-row">
           <div className="col-12 text-center">
             <h2 style = {{color: 'white'}}><u>The Barber Shop</u></h2>

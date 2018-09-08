@@ -1,0 +1,216 @@
+#info-page {
+  position: relative;
+  background-image: url('./../../public/images/color-logo-icons-black.png');
+  background-size: cover;
+  background-position: center;
+}
+.info-top-row {  
+  background-color: rgba(255,255,255,.05)
+}
+#info-title-lg {
+  width: 500px;
+  border-bottom: white solid 2px;
+}
+.about-shop {
+  font-size: 1.2em;
+  color: $infoColor;
+  line-height: 2em;
+}
+#info-title-sm {
+  width: 90%;
+  border-bottom: white solid 2px;
+}
+.table td {
+  border-top: inherit;
+}
+#info-hours-title {
+  border-bottom: solid $infoColor 2px;
+}
+
+.days {
+  color: $infoColor;
+  text-align: right;
+}
+.hours {
+  color: $infoColor;
+  text-align: left;
+}
+.info-map img {
+  width: 100%;
+}
+.info-shop {
+  text-align: center;
+}
+.info-location-table {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.info-location-table td {
+  min-width: 2rem;
+  word-wrap: break-word;
+  font-size: 1.1rem;
+}
+.info-location-table td a {
+  color: $infoColor + 1;
+}
+#info-appt-btn {
+  background: $gradient;
+  color: black;
+  width: 400px;
+  height: 50px;
+  border-radius: 8px;
+}
+#info-appt-btn:hover {
+  background: $hover;
+}
+.map img:hover {
+  opacity: .8;
+}
+.info-bottom-row {
+  margin: 2em 0;
+}
+.info-btn-col {
+  margin: 2em 0;
+}
+@media screen and (max-width: $sm -1) {
+  .about-shop {
+    margin-bottom: 1em;
+  }
+ 
+  .info-middle-row {
+    height: 100%;
+  }
+  #info-title-lg {
+    display: none;
+  }
+  #info-title-sm {
+    width: 250px;
+    margin-bottom: 3em;
+  }
+  .hours {
+    height: 50%;
+  }
+  .map {
+    height: 50%;
+  }
+  #info-appt-btn {  
+    margin: 1em 0;  
+    width: 100%;
+  }
+}
+@media screen and (min-width: $sm) and (max-width: $md -1) {
+  .info-top-row {
+    height: 13em;
+  }
+  #info-title-sm {
+    display: none;
+  }
+  .hours {
+    position: relative;
+  }
+}
+@media screen and (min-width: $md) and (max-width: $lg -1) {
+  .info-top-row {
+    height: 15%;
+  }
+  .info-middle-row {
+    border: 2px solid $infoColor;
+    height: 70%;
+  }
+  .info-bottom-row {
+    height: 15%;
+    margin: 1em 0;
+  }
+
+  #info-title-sm {
+    display: none;
+  }
+  #info-title-lg {
+    margin-bottom: 2em;
+  }
+  .navBar {
+    display: none;
+  }
+  .info-map {
+    padding: 0;
+    text-align: right;
+  }
+  .info-map img {
+    height: 100%;
+  }
+}
+@media screen and (min-width: $lg) and (max-width: $xl -1) {
+  .info-top-row {
+    margin-bottom: 4rem;
+  }
+  .info-middle-row {
+    margin-bottom: 2em;
+  }
+  
+  #info-title-sm {
+    display: none;
+  }
+  #info-title-lg {
+    padding-top: 1em;
+    width: 400px;
+    border-bottom: 2px solid white;
+  }
+  .info-map {
+    text-align: left !important;
+  }
+  .info-map img {
+    height: 100%;
+    width: 80%;
+  }
+  .hours {
+    position: relative;
+  }
+  .hoursTable {
+    position: relative;
+    margin-top: 0%;
+  }
+  .map img:hover {
+    opacity: .8;
+  }
+  
+  #info-appt-btn {   
+    margin-top: 2rem; 
+    width: 20rem;
+    border-radius: 8px;
+  }
+
+}
+@media screen and (min-width: $xl) {
+  .info-container {
+    height: 100%;
+  }
+  #info-title-sm {
+    display: none;
+  }
+  .info-top-row {
+    height: 150px;
+    margin-bottom: 2em;
+  }
+  .info-middle-row {
+    height: 60%;
+  }
+  .info-bottom-row {
+    margin: 0;
+  }
+  .info-hours img {
+    height: 10%;
+  }
+  .info-table {
+    height: 60%;
+  }
+  .info-btn-col {
+    margin: 0;
+  }
+  .info-hours {
+    animation-name: hours;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+
+}

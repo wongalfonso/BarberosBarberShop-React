@@ -13,7 +13,7 @@
   opacity: .5;
   margin: 1.2em;
 }
-#top-menu:hover, #info-menu:hover, #bio-menu:hover {
+#top-menu:hover, #info-menu:hover, #bio-menu:hover, #services-menu:hover {
   opacity:.7;
 }
 #top-menu {
@@ -25,7 +25,7 @@
 #info-menu {
   width: 20px;
 }
-#info-active, #bio-active, #top-active {
+#info-active, #bio-active, #top-active, #services-active {
   margin: 1.2em 2.2em;
   transition: all .2s;
 }

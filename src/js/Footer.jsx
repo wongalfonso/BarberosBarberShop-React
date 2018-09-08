@@ -14,7 +14,7 @@ export default class Footer extends Component {
               <a href='https://www.instagram.com/thebarberosbarbershop/' target = '_blank'>
                 <img src='./images/insta-icon.png' className = 'footer-icons' />
               </a>
-              <a href = ''>
+              <a href = 'https://www.facebook.com/thebarberosbarbershop' target = '_blank'>
                 <img src='./images/facebook-icon.png' className = 'footer-icons' id = 'facebook-icon'/>
               </a>
               <a href='https://www.yelp.com/biz/the-barberos-barber-shop-san-diego?osq=the+barberos+barbershop' target = '_blank'>

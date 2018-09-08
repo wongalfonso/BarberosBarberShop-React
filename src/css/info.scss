@@ -4,17 +4,14 @@
   background-size: cover;
   background-position: center;
 }
-.info-top-row {  
-  background-color: rgba(255,255,255,.05)
-}
 #info-title-lg {
   width: 500px;
   border-bottom: white solid 2px;
 }
 .about-shop {
-  font-size: 1.2em;
+  font-size: 1.1em;
   color: $infoColor;
-  line-height: 2em;
+  margin-bottom: 1em;
 }
 #info-title-sm {
   width: 90%;
@@ -24,6 +21,7 @@
   border-top: inherit;
 }
 #info-hours-title {
+  width: 250px;
   border-bottom: solid $infoColor 2px;
 }
 
@@ -57,27 +55,29 @@
 #info-appt-btn {
   background: $gradient;
   color: black;
-  width: 400px;
+  margin: 2em 0;
   height: 50px;
   border-radius: 8px;
 }
 #info-appt-btn:hover {
   background: $hover;
 }
+.info-location-table {
+  line-height: 2em;
+}
 .map img:hover {
   opacity: .8;
-}
-.info-bottom-row {
-  margin: 2em 0;
 }
 .info-btn-col {
   margin: 2em 0;
 }
-@media screen and (max-width: $sm -1) {
+@media screen and (max-width: $sm - 1) {
   .about-shop {
     margin-bottom: 1em;
   }
- 
+  .info-top-row {
+    height: 190px;
+  }
   .info-middle-row {
     height: 100%;
   }
@@ -94,40 +94,49 @@
   .map {
     height: 50%;
   }
+  #info-hours-title {
+    width: 250px;
+  }
   #info-appt-btn {  
-    margin: 1em 0;  
+    margin: 2em 0;  
     width: 100%;
   }
 }
-@media screen and (min-width: $sm) and (max-width: $md -1) {
+@media screen and (min-width: $sm) and (max-width: $md - 1) {
   .info-top-row {
     height: 13em;
-  }
+  }  
   #info-title-sm {
     display: none;
   }
   .hours {
     position: relative;
   }
+  .about-shop {
+    font-size: 1.3em;
+  }
+  .info-table {
+    font-size: 1.3em;
+  }
 }
-@media screen and (min-width: $md) and (max-width: $lg -1) {
+@media screen and (min-width: $md) and (max-width: $lg - 1) {
   .info-top-row {
     height: 15%;
   }
+  .about-shop {
+    font-size: 1.6em;
+  }
   .info-middle-row {
-    border: 2px solid $infoColor;
     height: 70%;
   }
-  .info-bottom-row {
-    height: 15%;
-    margin: 1em 0;
-  }
-
   #info-title-sm {
     display: none;
   }
   #info-title-lg {
     margin-bottom: 2em;
+  }
+  .info-table {
+    font-size: 1.6em;
   }
   .navBar {
     display: none;
@@ -139,8 +148,11 @@
   .info-map img {
     height: 100%;
   }
+  #info-appt-btn {
+    height: 60px;
+  }
 }
-@media screen and (min-width: $lg) and (max-width: $xl -1) {
+@media screen and (min-width: $lg) and (max-width: $xl - 1) {
   .info-top-row {
     margin-bottom: 4rem;
   }
@@ -156,12 +168,17 @@
     width: 400px;
     border-bottom: 2px solid white;
   }
+  .about-shop {
+    width: 100%;
+  }
   .info-map {
     text-align: left !important;
   }
+  .info-table {
+    line-height: 1.2em;
+  }
   .info-map img {
     height: 100%;
-    width: 80%;
   }
   .hours {
     position: relative;
@@ -192,11 +209,12 @@
     height: 150px;
     margin-bottom: 2em;
   }
+  
   .info-middle-row {
     height: 60%;
   }
-  .info-bottom-row {
-    margin: 0;
+  .info-table {
+    line-height: 1.2em;
   }
   .info-hours img {
     height: 10%;
@@ -208,9 +226,12 @@
     margin: 0;
   }
   .info-hours {
+    margin-left: 5em;
     animation-name: hours;
     animation-duration: 2s;
     animation-fill-mode: forwards;
   }
-
+  .info-location-table {
+    line-height: 1.5em;
+  }
 }

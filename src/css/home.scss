@@ -119,7 +119,8 @@
 
 @media screen and (min-width: $md) and (max-width: $lg - 1) {
   .full-page {
-    height: 100vh;
+    min-height: 100vh;
+    height: 100%;
   }
   .carousel-lg {
     display: none !important;

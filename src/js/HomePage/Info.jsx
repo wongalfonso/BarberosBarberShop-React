@@ -22,23 +22,26 @@ export default class Info extends Component {
   render() {
     return (
       <div className='full-page' id='info-page'>
+        <div className="container info-container">
           <div className="row info-top-row">
             <div className="col-12 text-center">
               <img src='./images/title-large-screen.png' id='info-title-lg' />
               <img src='./images/title-small-screen.png' id='info-title-sm' />
             </div>
           </div>
-        <div className="container info-container">
           <div className="row info-middle-row">
-          <div className="col-12 text-center">
-            <h2 style = {{color: 'white'}}><u>The Barber Shop</u></h2>
-          </div>
-            <div className="col-lg-12 text-center">
+            <div className="col-xl-8 col-lg-12 text-center">
+              <h2 style={{ color: 'white' }}><u>The Barber Shop</u></h2>
               <div className='about-shop'>
                 This is a new Barber Shop located in the North Park area of San Diego. At the Barberos Barbershop, we take pride in our clean haircuts and traditional hot towel shaves. Our mission is to provide top of the line customer service that is why every client gets a personalized consultation to make sure we give you what you want. Come visit us and experience it for yourself!
-          </div>
+              </div>
+              <div className="info-map">
+                <a href='https://www.google.com/maps/search/?api=1&query=2637 B UniversityAve,San Diego,Ca,92104' target='_blank'>
+                  <img src='./images/google-maps.jpg' />
+                </a>
+              </div>
             </div>
-            <div className="col-xl-4 col-lg-12 text-center info-hours">
+            <div className="col-xl-3 col-lg-12 text-center info-hours">
               <img src='./images/hours-title.png' id='info-hours-title' />
               <table className='table info-table'>
                 <tbody>
@@ -72,16 +75,6 @@ export default class Info extends Component {
                   </tr>
                 </tbody>
               </table>
-            </div>
-            <div className="col-xl-8 col-lg-12 text-center info-map">
-              <a href='https://www.google.com/maps/search/?api=1&query=2637 B UniversityAve,San Diego,Ca,92104' target='_blank'>
-                <img src='./images/google-maps.jpg' />
-              </a>
-            </div>
-          </div>
-
-          <div className="row info-bottom-row">
-            <div className="col-12 text-center">
               <table className='info-location-table'>
                 <tbody>
                   <tr>
@@ -95,9 +88,6 @@ export default class Info extends Component {
                   </tr>
                 </tbody>
               </table>
-            </div>
-
-            <div className="col-xl-12 text-center info-btn-col">
               <button
                 id='info-appt-btn'
                 className='btn form-control'
@@ -106,6 +96,7 @@ export default class Info extends Component {
                 Schedule an Appointment
               </button>
             </div>
+
           </div>
 
         </div>

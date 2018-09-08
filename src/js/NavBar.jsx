@@ -46,7 +46,7 @@ export default class NavBar extends Component {
                 </a>
             }
           </li>
-          <li>
+          {/* <li>
             {
               (active === 'services') ?
                 <a className = 'pages'> 
@@ -57,7 +57,7 @@ export default class NavBar extends Component {
                   <img id = 'services-menu' src='./images/knife-white.png' onClick = {scroll.bind(this, 'services-page')}/>
                 </a>
             }
-          </li>
+          </li> */}
         </ul>
       </div>
     )

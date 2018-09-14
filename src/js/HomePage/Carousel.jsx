@@ -22,8 +22,8 @@ export default class Carousel extends Component {
         </ol>
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <img className="d-block carousel-lg" src='./images/color-logo-icons-black.png' id = 'logos-png' alt="First slide"/>
-            <img className="d-block w-100 carousel-md" src='./images/color-logo-icons-black.png' alt="First slide" />
+            <img className="d-block carousel-lg" src='./images/logo-icon.png' id = 'logos-png' alt="First slide"/>
+            <img className="d-block w-100 carousel-md" src='./images/logo-icon.png' alt="First slide" />
             <img className="d-block w-100 carousel-sm" src='./images/logo-color-sm.jpg' alt="First slide" />
           </div>
           <div className="carousel-item">

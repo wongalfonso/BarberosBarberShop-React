@@ -30,11 +30,15 @@ export default class Info extends Component {
             </div>
           </div>
           <div className="row info-middle-row">
-            <div className="col-xl-8 col-lg-12 text-center">
-              <h2 style={{ color: 'white' }}><u>The Barber Shop</u></h2>
+            <div className="col-12 text-center">
+              <span id = 'barber-shop-tag' style={{ color: 'white' }}><u>The Barber Shop</u></span>
               <div className='about-shop'>
-                This is a new Barber Shop located in the North Park area of San Diego. At the Barberos Barbershop, we take pride in our clean haircuts and traditional hot towel shaves. Our mission is to provide top of the line customer service that is why every client gets a personalized consultation to make sure we give you what you want. Come visit us and experience it for yourself!
+                This is a new Barber Shop located in the North Park area of San Diego. At the Barberos Barbershop, we take pride in our clean haircuts and traditional hot towel shaves. Our mission is to provide top of the line customer service that is why every client gets a personalized consultation. Come visit us and experience it for yourself!
               </div>
+            </div>
+            <div className="col-xl-8 col-lg-12 text-center">
+
+
               <div className="info-map">
                 <a href='https://www.google.com/maps/search/?api=1&query=2637 B UniversityAve,San Diego,Ca,92104' target='_blank'>
                   <img src='./images/google-maps.jpg' />
@@ -75,6 +79,7 @@ export default class Info extends Component {
                   </tr>
                 </tbody>
               </table>
+              <div className="col-xl-12">
               <table className='info-location-table'>
                 <tbody>
                   <tr>
@@ -88,17 +93,20 @@ export default class Info extends Component {
                   </tr>
                 </tbody>
               </table>
+              </div>
+
+            </div>
+            <div className="col-12 text-center">
               <button
                 id='info-appt-btn'
                 className='btn form-control'
                 target="_blank"
                 onClick={this.props.schedule}>
                 Schedule an Appointment
-              </button>
+            </button>
             </div>
 
           </div>
-
         </div>
       </div>
     )

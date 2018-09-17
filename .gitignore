@@ -5,3 +5,4 @@ dist
 /config
 .DS_store
 *.log
+/logs-barberos

@@ -5,7 +5,6 @@ const fs = require('fs');
 const dateFormat = require("dateformat");
 
 const app = express();
-
 let template = 'Agent, Time, Method, Resource, Version, Status';
 
 function logger(req, res, next) {

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default class Info extends Component {
 
@@ -30,18 +31,21 @@ export default class Info extends Component {
             </div>
           </div>
           <div className="row info-middle-row">
-            <div className="col-xl-8 col-lg-12 text-center">
-              <h2 style={{ color: 'white' }}><u>The Barber Shop</u></h2>
+            <div className="col-12 text-center">
+              <span id = 'barber-shop-tag' style={{ color: 'white' }}><u>The Barber Shop</u></span>
               <div className='about-shop'>
-                This is a new Barber Shop located in the North Park area of San Diego. At the Barberos Barbershop, we take pride in our clean haircuts and traditional hot towel shaves. Our mission is to provide top of the line customer service that is why every client gets a personalized consultation to make sure we give you what you want. Come visit us and experience it for yourself!
+                This is a new Barber Shop located in the North Park area of San Diego. At the Barberos Barbershop, we take pride in our clean haircuts and traditional hot towel shaves. Our mission is to provide top of the line customer service that is why every client gets a personalized consultation. Come visit us and experience it for yourself!
               </div>
+            </div>
+            <div className="col-xl-7 col-lg-12 text-center">
               <div className="info-map">
                 <a href='https://www.google.com/maps/search/?api=1&query=2637 B UniversityAve,San Diego,Ca,92104' target='_blank'>
                   <img src='./images/google-maps.jpg' />
                 </a>
               </div>
             </div>
-            <div className="col-xl-3 col-lg-12 text-center info-hours">
+
+            <div className="col-xl-4 col-lg-6 col-md-5 info-hours">
               <img src='./images/hours-title.png' id='info-hours-title' />
               <table className='table info-table'>
                 <tbody>
@@ -74,31 +78,40 @@ export default class Info extends Component {
                     <td className='hours'>9:30am - 12pm</td>
                   </tr>
                 </tbody>
-              </table>
+              </table>              
+            </div>
+            <div className="col-xl-12 col-lg-6 col-md-7 info-location">
               <table className='info-location-table'>
                 <tbody>
                   <tr>
+                    <td className = 'icons'>
+                    <a href='https://www.google.com/maps/search/?api=1&query=2637 B UniversityAve,San Diego,Ca,92104' target='_blank'><FontAwesomeIcon icon = 'map-marker'/></a></td>
                     <td className='info-shop'><a href='https://www.google.com/maps/search/?api=1&query=2637 B UniversityAve,San Diego,Ca,92104' target='_blank'>2637 B University Ave, San Diego, CA 92104</a></td>
                   </tr>
                   <tr>
+                    <td className = 'icons'><a href='tel:+16193664149'><FontAwesomeIcon icon = 'phone'/></a></td>
                     <td className='info-shop'><a href='tel:+16193664149'>1 (619) 246-3830</a></td>
                   </tr>
                   <tr>
+                    <td className = 'icons'><a href='mailto:Thebarberos619@gmail.com' target='_blank'><FontAwesomeIcon icon = 'envelope'/></a></td>
                     <td className='info-shop'><a href='mailto:Thebarberos619@gmail.com' target='_blank'>Thebarberos619@gmail.com</a></td>
                   </tr>
                 </tbody>
               </table>
+            </div>
+              
+
+            <div className="col-12 text-center info-button">
               <button
                 id='info-appt-btn'
                 className='btn form-control'
                 target="_blank"
                 onClick={this.props.schedule}>
                 Schedule an Appointment
-              </button>
+            </button>
             </div>
 
           </div>
-
         </div>
       </div>
     )

@@ -34,7 +34,6 @@ export default class HomePage extends Component {
     })
   }
   scroll(target) {
-    // console.log(target);
     let page;
     if (target === '' || target === 'splash-carousel') { page = 'carousel' }
     if (target === 'info-page') { page = 'info' }
@@ -44,7 +43,7 @@ export default class HomePage extends Component {
       return ;
     } else {
       var id = document.getElementById(target).offsetTop
-      // console.log(id);
+            
       window.scrollTo({ top: id, behavior: 'smooth' })
       this.setState({ enter: page })
     }

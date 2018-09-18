@@ -1,16 +1,11 @@
-#info-page {
-  position: relative;
-  background-size: cover;
-  background-position: center;
-}
 #info-title-lg {
   width: 500px;
   border-bottom: white solid 2px;
 }
 .about-shop {
-  font-size: 1.1em;
   color: $infoColor;
   margin-bottom: 1em;
+  padding: 15px;
 }
 #info-title-sm {
   width: 90%;
@@ -19,8 +14,11 @@
 .table td {
   border-top: inherit;
 }
+.info-hours {
+  text-align: center;
+}
 #info-hours-title {
-  width: 250px;
+  width: 175px;
   border-bottom: solid $infoColor 2px;
 }
 #barber-shop-tag {
@@ -34,44 +32,57 @@
   color: $infoColor;
   text-align: left;
 }
-.info-map img {
-  width: 100%;
+.info-map{
+  img {
+    width: 100%;
+  }
+  img:hover {
+    opacity: .8;
+  }
 }
 .info-shop {
-  text-align: center;
+  text-align: left;
+}
+.icons {
+  margin-right: 1em;
+  text-align: right;
 }
 .info-location-table {
-  text-align: center;
+  margin-top: 2em;
   margin-left: auto;
   margin-right: auto;
-}
-.info-location-table td {
-  min-width: 2rem;
-  word-wrap: break-word;
-  font-size: 1.1rem;
-}
-.info-location-table td a {
-  color: $infoColor + 1;
-}
-#info-appt-btn {
-  background: $gradient;
-  color: black;
-  margin: 2em 0;
-  height: 50px;
-  border-radius: 8px;
-}
-#info-appt-btn:hover {
-  background: $hover;
-}
-.info-location-table {
   line-height: 2em;
+  table-layout: fixed;
+  td {
+    padding-right:1em;
+    min-width: 2rem;
+    word-wrap: break-word;
+    a {
+      color: $infoColor + 1;
+      text-decoration: none;
+    }
+    a:hover {
+      opacity: .8;
+    }
+  }
 }
-.map img:hover {
-  opacity: .8;
+
+.info-button {
+  button {
+    background: $gradient;
+    color: black;
+    margin: 2em 0;
+    height: 50px;
+    border-radius: 8px;
+  }
+  button:hover {
+    background: $hover;
+  }
 }
 .info-btn-col {
   margin: 2em 0;
 }
+
 @media screen and (max-width: $sm - 1) {
   .about-shop {
     margin-bottom: 1em;
@@ -116,29 +127,32 @@
   #info-title-sm {
     display: none;
   }
-  .info-table {
-    line-height: .5em;
-  }
   .hours {
     position: relative;
   }
   .about-shop {
-    font-size: 1.3em;
+    font-size: 1em;
   }
   .info-table {
-    font-size: 1.2em;
+    line-height: .5em;
+    font-size: 1em;
+  }
+  .info-hours, .info-location {
+    margin-top: 1em;
+    line-height: .5em;    
+  }  
+  .info-location {
+    margin-top: auto;
+    margin-bottom: auto;
   }
   .info-location-table {
-    border: solid;
     width:100%;
-    td {
-      font-size: 1.4em;
-    }
+    table-layout: auto;
   } 
   #info-appt-btn {  
-    height: 70px;    
+    height: 60px;    
     width: 657px;
-    font-size: 1.2em;
+    font-size: 1em;
   }
 }
 @media screen and (min-width: $md) and (max-width: $lg - 1) {
@@ -146,7 +160,7 @@
     height: 15%;
   }
   .about-shop {
-    font-size: 1.6em;
+    font-size: 1em;
   }
   .info-middle-row {
     height: 70%;
@@ -157,32 +171,35 @@
   #info-title-lg {
     margin-bottom: 2em;
   }
-  .info-table {
-    font-size: 1.6em;
-  }
   .navBar {
     display: none;
   }
+  .info-hours, .info-location {
+    margin-top: 1em;
+    line-height: .5em;    
+  }  
+  .info-location {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
   .info-map {
     padding: 0;
-    text-align: right;
-  }
-  .info-map img {
-    height: 100%;
+    margin: 0;
+    img {
+      width: 80%;
+    }
   }
   #info-appt-btn {
-    height: 60px;
-    
+    height: 60px;    
   }
 }
 @media screen and (min-width: $lg) and (max-width: $xl - 1) {
   .info-top-row {
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
   }
   .info-middle-row {
     margin-bottom: 2em;
-  }
-  
+  }  
   #info-title-sm {
     display: none;
   }
@@ -194,29 +211,28 @@
   .about-shop {
     width: 100%;
   }
+  .info-table {
+    line-height: 1em;
+    table-layout: fixed;
+  }
   .info-map {
     text-align: left !important;
-  }
-  .info-table {
-    line-height: 1.2em;
-  }
-  .info-map img {
-    height: 100%;
+    img {
+      width: 100%;
+    } 
   }
   .hours {
     position: relative;
   }
-  .hoursTable {
-    position: relative;
-    margin-top: 0%;
+  .info-hours {
+    text-align: center;
   }
-  .map img:hover {
-    opacity: .8;
+  .info-location {
+    table-layout: fixed;
   }
-  
   #info-appt-btn {   
     margin-top: 2rem; 
-    width: 20rem;
+    width: 30rem;
     border-radius: 8px;
   }
 
@@ -231,18 +247,15 @@
   .info-top-row {
     height: 150px;
     margin-bottom: 2em;
-  }
-  
+  }  
   .info-middle-row {
     height: 60%;
-  }
-  .info-table {
-    line-height: 1.2em;
   }
   .info-hours img {
     height: 10%;
   }
   .info-table {
+    line-height: 1.2em;
     height: 60%;
   }
   .info-btn-col {
@@ -253,9 +266,14 @@
     animation-name: hours;
     animation-duration: 2s;
     animation-fill-mode: forwards;
+
   }
   .info-location-table {
     line-height: 1.5em;
+    table-layout: fixed;
+  }
+  .info-map {
+    margin-left: 1em;
   }
   #info-appt-btn {   
     margin-top: 2rem; 

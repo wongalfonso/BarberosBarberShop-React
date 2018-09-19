@@ -34,6 +34,11 @@ app.use(express.static('public'));
 app.use(express.static('dist'));
 app.use(logger);
 
+app.get('*.js', (req,res,next) => {
+  req.url = req.url + '.gz';
+  res.set('Content-Encoding', 'gzip');
+  next();
+})
 
 app.get('*', (req, res) => {
   res.sendFile(path.resolve('public', 'index.html'));

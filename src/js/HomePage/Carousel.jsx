@@ -22,18 +22,18 @@ export default class Carousel extends Component {
         </ol>
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <img className="d-block carousel-lg" src='./images/logo-icon.png' id = 'logos-png' alt="First slide"/>
-            <img className="d-block w-100 carousel-md" src='./images/logo-icon.png' alt="First slide" />
-            <img className="d-block w-100 carousel-sm" src='./images/logo-color-sm.jpg' alt="First slide" />
+            <img className="d-block carousel-lg" src='./images/logo-icon.png' id = 'logos-lg' alt="First slide"/>
+            <img className="d-block carousel-md" src='./images/logo-icon.png' id = 'logos-md' alt="First slide" />
+            <img className="d-block w-100 carousel-sm" src='./images/logo-color-sm.png' id = 'logos-sm' alt="First slide" />
           </div>
           <div className="carousel-item">
             <img className="d-block w-100 carousel-lg" src='./images/north-park-sign-lg.jpg' alt="Second slide" />
-            <img className="d-block w-100 carousel-md" src='./images/north-park-sign-md.jpg' alt="Second slide" />
+            <img className="d-block w-100 carousel-md" src='./images/north-park-sign-lg.jpg' alt="Second slide" />
             <img className="d-block w-100 carousel-sm" src='./images/north-park-sign-sm.jpg' alt="Second slide" />
           </div>
           <div className="carousel-item">
             <img className="d-block w-100 carousel-lg" src='./images/barber-pole-lg.jpg' alt="Third slide" />
-            <img className="d-block w-100 carousel-md" src='./images/barber-pole-sm.jpg' alt="Third slide" />
+            <img className="d-block w-100 carousel-md" src='./images/barber-pole-lg.jpg' alt="Third slide" />
             <img className="d-block w-100 carousel-sm" src='./images/barber-pole-sm.jpg' alt="Third slide" />
           </div>
           <div className="carousel-item">
@@ -56,7 +56,6 @@ export default class Carousel extends Component {
           <span className="sr-only">Next</span>
         </a>
         <div id = 'top-bar'>
-
           <img src = './images/barberos-full-text.png' id = 'barberos-logo'/>
         </div>
           <button id = 'carousel-btn' onClick =   {this.props.schedule}>Schedule Now</button>

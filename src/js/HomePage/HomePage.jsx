@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReactGA from 'react-ga';
 import Carousel from './Carousel';
 import Info from './Info';
 import Loading from '../Loading';
@@ -17,6 +18,10 @@ export default class HomePage extends Component {
     this.mouseExit = this.mouseExit.bind(this);
     this.scroll = this.scroll.bind(this);
     this.scroller = this.scroller.bind(this);
+  }
+
+  componentDidMount() {
+    
   }
 
   componentDidUpdate() {
@@ -57,8 +62,12 @@ export default class HomePage extends Component {
     const info = document.getElementById('info-page');
     // console.log(carousel.scrollHeight);
   }
-  schedule() {
-    window.location = 'https://www.schedulicity.com/scheduling/TBB65N'
+  schedule(location) {
+    ReactGA.outboundLink({
+      label: `from ${location} to schedulicity`
+    }, () => {
+      window.location = 'https://www.schedulicity.com/scheduling/TBB65N'
+    })
   }
   render() {
     

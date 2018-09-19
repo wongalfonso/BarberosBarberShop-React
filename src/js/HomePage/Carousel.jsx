@@ -58,7 +58,7 @@ export default class Carousel extends Component {
         <div id = 'top-bar'>
           <img src = './images/barberos-full-text.png' id = 'barberos-logo'/>
         </div>
-          <button id = 'carousel-btn' onClick =   {this.props.schedule}>Schedule Now</button>
+          <button id = 'carousel-btn' onClick =   {() => this.props.schedule('carousel')}>Schedule Now</button>
         
       </div>
     )

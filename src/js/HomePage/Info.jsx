@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import ReactGA from 'react-ga';
 
 export default class Info extends Component {
 
@@ -18,7 +19,12 @@ export default class Info extends Component {
 
   }
 
-
+  linkClick(link) {
+    ReactGA.event({
+      category: 'clicked link in info',
+      action: `to ${link}`
+    })
+  }
 
   render() {
     return (
@@ -85,16 +91,42 @@ export default class Info extends Component {
                 <tbody>
                   <tr>
                     <td className = 'icons'>
-                    <a href='https://www.google.com/maps/search/?api=1&query=2637 B UniversityAve,San Diego,Ca,92104' target='_blank'><FontAwesomeIcon icon = 'map-marker'/></a></td>
-                    <td className='info-shop'><a href='https://www.google.com/maps/search/?api=1&query=2637 B UniversityAve,San Diego,Ca,92104' target='_blank'>2637 B University Ave, San Diego, CA 92104</a></td>
+                      <a href='https://www.google.com/maps/search/?api=1&query=2637 B UniversityAve,San Diego,Ca,92104' target='_blank' onClick = {() => this.linkClick('google')}>
+                      <FontAwesomeIcon icon = 'map-marker'/></a>
+                    </td>
+                    <td className='info-shop'>
+                      <a  href='https://www.google.com/maps/search/?api=1&query=2637 B UniversityAve,San Diego,Ca,92104'           target='_blank' 
+                          onClick = {() => this.linkClick('google')}>
+                        2637 B University Ave, San Diego, CA 92104
+                      </a>
+                    </td>
                   </tr>
                   <tr>
-                    <td className = 'icons'><a href='tel:+16193664149'><FontAwesomeIcon icon = 'phone'/></a></td>
-                    <td className='info-shop'><a href='tel:+16193664149'>1 (619) 246-3830</a></td>
+                    <td className = 'icons'>
+                      <a href='tel:+16193664149' onClick = {() => this.linkClick('phone')}>
+                      <FontAwesomeIcon icon = 'phone'/>
+                      </a>
+                    </td>
+                    <td className='info-shop'>
+                      <a  href='tel:+16193664149' 
+                          onClick = {() => this.linkClick('phone')}>
+                        1 (619) 246-3830
+                      </a>
+                    </td>
                   </tr>
                   <tr>
-                    <td className = 'icons'><a href='mailto:Thebarberos619@gmail.com' target='_blank'><FontAwesomeIcon icon = 'envelope'/></a></td>
-                    <td className='info-shop'><a href='mailto:Thebarberos619@gmail.com' target='_blank'>Thebarberos619@gmail.com</a></td>
+                    <td className = 'icons'>
+                      <a  href='mailto:Thebarberos619@gmail.com'               target='_blank' 
+                          onClick = {() => this.linkClick('gmail')}>
+                        <FontAwesomeIcon icon = 'envelope'/>
+                      </a>
+                    </td>
+                    <td className='info-shop'>
+                      <a  href='mailto:Thebarberos619@gmail.com'               target='_blank' 
+                          onClick = {() => this.linkClick('gmail')}>
+                        Thebarberos619@gmail.com
+                      </a>
+                    </td>
                   </tr>
                 </tbody>
               </table>
@@ -106,7 +138,7 @@ export default class Info extends Component {
                 id='info-appt-btn'
                 className='btn form-control'
                 target="_blank"
-                onClick={this.props.schedule}>
+                onClick={() => this.props.schedule('info')}>
                 Schedule an Appointment
             </button>
             </div>

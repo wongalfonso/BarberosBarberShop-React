@@ -87,9 +87,16 @@
     display: inline-flex;
     height: 190px;
     #barberos-logo {
-      width: 100%;
+      width: 90%;
+      max-width: 400px;
     }
   }  
+  #carousel-btn {
+    width: 70%;
+    max-width: 300px;
+    font-size:1.5em;
+    top: 80%;
+  }
 }
 
 @media screen and (min-width: $sm) and (max-width: $md - 1) {
@@ -97,9 +104,9 @@
     display: none !important;
   }
   #top-bar {
-    height: 270px;
+    height: 180px;
     #barberos-logo {
-      width: 600px;
+      width: 400px;
     }
   }
   .full-page {
@@ -125,7 +132,7 @@
     #barberos-logo {
       width: 500px;
     }
-  }
+  }  
 }
 
 @media screen and (min-width: $lg) and (max-width: $xl - 1) {

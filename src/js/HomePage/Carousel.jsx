@@ -56,7 +56,7 @@ export default class Carousel extends Component {
           <span className="sr-only">Next</span>
         </a>
         <div id = 'top-bar'>
-          <img src = './images/barberos-full-text.png' id = 'barberos-logo'/>
+          <img src = './images/barberos-full-text.png' alt = 'Barberos BarberShop Main Header' id = 'barberos-logo'/>
         </div>
           <button id = 'carousel-btn' onClick =   {() => this.props.schedule('carousel')}>Schedule Now</button>
         

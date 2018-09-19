@@ -22,29 +22,29 @@ export default class Carousel extends Component {
         </ol>
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <img className="d-block carousel-lg" src='./images/logo-icon.png' id = 'logos-lg' alt="First slide"/>
-            <img className="d-block carousel-md" src='./images/logo-icon.png' id = 'logos-md' alt="First slide" />
-            <img className="d-block w-100 carousel-sm" src='./images/logo-color-sm.png' id = 'logos-sm' alt="First slide" />
+            <img className="d-block carousel-lg" src='./images/logo-icon.png' id = 'logos-lg' alt="The Barberos BarberShop Logo"/>
+            <img className="d-block carousel-md" src='./images/logo-icon.png' id = 'logos-md' alt="The Barberos BarberShop Logo" />
+            <img className="d-block w-100 carousel-sm" src='./images/logo-color-sm.png' id = 'logos-sm' alt="The Barberos BarberShop Logo" />
           </div>
           <div className="carousel-item">
-            <img className="d-block  carousel-lg" src='./images/north-park-sign-lg.jpg' alt="Second slide" />
-            <img className="d-block carousel-md" src='./images/north-park-sign-lg.jpg' alt="Second slide" />
-            <img className="d-block carousel-sm" src='./images/north-park-sign-sm.jpg' alt="Second slide" />
+            <img className="d-block  carousel-lg" src='./images/north-park-sign-lg.jpg' alt="North Park City Sign" />
+            <img className="d-block carousel-md" src='./images/north-park-sign-lg.jpg' alt="North Park City Sign" />
+            <img className="d-block carousel-sm" src='./images/north-park-sign-sm.jpg' alt="North Park City Sign" />
           </div>
           <div className="carousel-item">
-            <img className="d-block carousel-lg" src='./images/barber-pole-lg.jpg' alt="Third slide" />
-            <img className="d-block carousel-md" src='./images/barber-pole-lg.jpg' alt="Third slide" />
-            <img className="d-block w-100 carousel-sm" src='./images/barber-pole-sm.jpg' alt="Third slide" />
+            <img className="d-block carousel-lg" src='./images/barber-pole-lg.jpg' alt="The Barberos Barshop Pole" />
+            <img className="d-block carousel-md" src='./images/barber-pole-lg.jpg' alt="The Barberos Barshop Pole" />
+            <img className="d-block w-100 carousel-sm" src='./images/barber-pole-sm.jpg' alt="The Barberos Barshop Pole" />
           </div>
           <div className="carousel-item">
-            <img className="d-block carousel-lg" src='./images/barber-chair-lg.jpg' alt="Fourth slide" />
-            <img className="d-block carousel-md" src='./images/barber-chair-sm.jpg' alt="Fourth slide" />
-            <img className="d-block w-100 carousel-sm" src='./images/barber-chair-sm.jpg' alt="Fourth slide" />
+            <img className="d-block carousel-lg" src='./images/barber-chair-lg.jpg' alt="The Barberos BarberShop Chair" />
+            <img className="d-block carousel-md" src='./images/barber-chair-sm.jpg' alt="The Barberos BarberShop Chair" />
+            <img className="d-block w-100 carousel-sm" src='./images/barber-chair-sm.jpg' alt="The Barberos BarberShop Chair" />
           </div>
           <div className="carousel-item ">
-            <img className="d-block carousel-lg" src='./images/barber-shop-lg.jpg' alt="Fifth slide"/>
-            <img className="d-block carousel-md" src='./images/chair-sm.jpg' alt="Fifth slide"/>
-            <img className="d-block w-100 carousel-sm" src='./images/chair-sm.jpg' alt="Fifth slide"/>
+            <img className="d-block carousel-lg" src='./images/barber-shop-lg.jpg' alt="The Barberos BarberShop Lobby"/>
+            <img className="d-block carousel-md" src='./images/chair-sm.jpg' alt="The Barberos BarberShop Lobby"/>
+            <img className="d-block w-100 carousel-sm" src='./images/chair-sm.jpg' alt="The Barberos BarberShop Lobby"/>
           </div>
         </div>
         <a className="carousel-control-prev" href="#splash-carousel" role="button" data-slide="prev">

@@ -28,7 +28,7 @@ export default class Bio extends Component {
             </div>
 
             <div className="col-xl-4 col-md-12 bio-photo-div">
-              <img src='./images/omar-profile-photo.jpg' className='bio-photo' />
+              <img src='./images/omar-profile-photo.jpg' alt = 'Omar Menenses profile photo' className='bio-photo' />
             </div>
             <div className="col-xl-8 col-md-12">
               <p className='bio-text'>
@@ -47,7 +47,7 @@ export default class Bio extends Component {
             </div>
 
             <div className="col-xl-4 col-md-12  bio-photo-div">
-              <img src='./images/noah-profile-photo.jpg' className='bio-photo' />
+              <img src='./images/noah-profile-photo.jpg' alt = 'Noah profile photo' className='bio-photo' />
             </div>
             <div className="col-xl-8 col-md-12 ">
               <p className='bio-text'>

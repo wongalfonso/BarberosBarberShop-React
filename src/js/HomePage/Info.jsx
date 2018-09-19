@@ -32,8 +32,8 @@ export default class Info extends Component {
         <div className="container info-container">
           <div className="row info-top-row">
             <div className="col-12 text-center">
-              <img src='./images/title-large-screen.png' id='info-title-lg' />
-              <img src='./images/title-small-screen.png' id='info-title-sm' />
+              <img src='./images/title-large-screen.png' id='info-title-lg' alt = 'The Barberos Barbershop Header'/>
+              <img src='./images/title-small-screen.png' id='info-title-sm' alt = 'The Barberos Barbershop Header'/>
             </div>
           </div>
           <div className="row info-middle-row">
@@ -46,7 +46,7 @@ export default class Info extends Component {
             <div className="col-xl-7 col-lg-12 text-center">
               <div className="info-map">
                 <a href='https://www.google.com/maps/search/?api=1&query=2637 B UniversityAve,San Diego,Ca,92104' target='_blank'>
-                  <img src='./images/google-maps.jpg' />
+                  <img src='./images/google-maps.jpg' alt = 'The Barberos Barbershop Google Maps' />
                 </a>
               </div>
             </div>

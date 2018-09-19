@@ -65,6 +65,11 @@
   color: $infoColor;
   margin-bottom: 2em;
 }
+.carousel-lg, .carousel-md {
+  margin: 0 auto;
+  background-size: cover;
+  background-position: center;
+}
 @media screen and (max-width: $sm - 1) {
   .carousel-lg, .carousel-md {
     display: none !important;
@@ -131,10 +136,6 @@
   .carousel-sm, .carousel-md {
     display: none !important;
   }
-  .carousel-lg {
-    background-size: cover;
-    background-position: center;
-  }
   #top-bar {
     height: 225px;
     #barberos-logo {
@@ -144,10 +145,6 @@
   #carousel-btn:hover {
     background-color: $infoColor;
     color: black;
-  }
-  .w-100 {
-    min-width: 100vw;
-    min-height: 100vh;
   }
 }
 @media screen and (min-width: $xl) {

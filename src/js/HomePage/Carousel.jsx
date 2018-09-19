@@ -27,23 +27,23 @@ export default class Carousel extends Component {
             <img className="d-block w-100 carousel-sm" src='./images/logo-color-sm.png' id = 'logos-sm' alt="First slide" />
           </div>
           <div className="carousel-item">
-            <img className="d-block w-100 carousel-lg" src='./images/north-park-sign-lg.jpg' alt="Second slide" />
-            <img className="d-block w-100 carousel-md" src='./images/north-park-sign-lg.jpg' alt="Second slide" />
-            <img className="d-block w-100 carousel-sm" src='./images/north-park-sign-sm.jpg' alt="Second slide" />
+            <img className="d-block  carousel-lg" src='./images/north-park-sign-lg.jpg' alt="Second slide" />
+            <img className="d-block carousel-md" src='./images/north-park-sign-lg.jpg' alt="Second slide" />
+            <img className="d-block carousel-sm" src='./images/north-park-sign-sm.jpg' alt="Second slide" />
           </div>
           <div className="carousel-item">
-            <img className="d-block w-100 carousel-lg" src='./images/barber-pole-lg.jpg' alt="Third slide" />
-            <img className="d-block w-100 carousel-md" src='./images/barber-pole-lg.jpg' alt="Third slide" />
+            <img className="d-block carousel-lg" src='./images/barber-pole-lg.jpg' alt="Third slide" />
+            <img className="d-block carousel-md" src='./images/barber-pole-lg.jpg' alt="Third slide" />
             <img className="d-block w-100 carousel-sm" src='./images/barber-pole-sm.jpg' alt="Third slide" />
           </div>
           <div className="carousel-item">
-            <img className="d-block w-100 carousel-lg" src='./images/barber-chair-lg.jpg' alt="Fourth slide" />
-            <img className="d-block w-100 carousel-md" src='./images/barber-chair-sm.jpg' alt="Fourth slide" />
+            <img className="d-block carousel-lg" src='./images/barber-chair-lg.jpg' alt="Fourth slide" />
+            <img className="d-block carousel-md" src='./images/barber-chair-sm.jpg' alt="Fourth slide" />
             <img className="d-block w-100 carousel-sm" src='./images/barber-chair-sm.jpg' alt="Fourth slide" />
           </div>
           <div className="carousel-item ">
-            <img className="d-block w-100 carousel-lg" src='./images/barber-shop-lg.jpg' alt="Fifth slide"/>
-            <img className="d-block w-100 carousel-md" src='./images/chair-sm.jpg' alt="Fifth slide"/>
+            <img className="d-block carousel-lg" src='./images/barber-shop-lg.jpg' alt="Fifth slide"/>
+            <img className="d-block carousel-md" src='./images/chair-sm.jpg' alt="Fifth slide"/>
             <img className="d-block w-100 carousel-sm" src='./images/chair-sm.jpg' alt="Fifth slide"/>
           </div>
         </div>

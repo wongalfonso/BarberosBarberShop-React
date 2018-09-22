@@ -17,6 +17,10 @@
   font-size: 1.2em;
   color: $infoColor;
 }
+.bio-title {
+  margin: 1em 0;
+  width: 400px;  
+}
 .bio-photo-div {
   padding-left: 0;
 }
@@ -47,6 +51,9 @@
   }
   .bio-text {
     font-size: 1em;
+  }
+  .bio-title {
+    width: 300px;
   }
 }
 @media screen and (min-width: $sm) and (max-width: $md - 1) {

@@ -8,7 +8,8 @@ export default class Info extends Component {
     const page = document.getElementById('info-page');
     page.onmouseenter = () => this.props.enter('info');
     page.onmouseleave = () => this.props.exit('info');
-    page.hasFocus = () => console.log('yes');
+    window.scroll = function() {scrollFunction()} 
+    // page.hasFocus = () => console.log('yes');
   }
 
   infoEnterAnimation() {

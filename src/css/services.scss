@@ -1,0 +1,39 @@
+
+.services-container {
+  min-height: 100%;
+  height: 100%;
+}
+.services-top-row {
+  height: 25%;
+}
+#services-title {
+  width: 400px;
+  height: 60px;
+  margin: 4em 0;
+}
+
+.services-middle-row {
+  height: 60%;
+  table {
+    table-layout: fixed; 
+  }
+}
+
+@media screen and (max-width: $sm - 1) {
+ #services-title {
+   width: 300px;
+ }
+}
+
+@media screen and (min-width:$sm) and (max-width: $md - 1) {
+
+}
+@media screen and (min-width:$md) and (max-width: $lg - 1) {
+
+}
+@media screen and (min-width:$lg) and (max-width: $xl - 1) {
+
+}
+@media screen and (max-width:$xl){
+
+}

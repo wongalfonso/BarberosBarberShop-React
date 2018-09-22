@@ -5,6 +5,7 @@ import Info from './Info';
 import Loading from '../Loading';
 import NavBar from '../NavBar';
 import Bio from './Bio';
+import Pricing from './Services';
 import Footer from '../Footer';
 
 export default class HomePage extends Component {
@@ -91,6 +92,10 @@ export default class HomePage extends Component {
           enter={this.mouseEnter}
           exit={this.mouseExit}
           />
+        <Pricing
+          enter = {this.mouseEnter}
+          exit = {this.mouseExit}
+        />
         <Footer />
       </div>
     )

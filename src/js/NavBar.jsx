@@ -4,7 +4,6 @@ import React, { Component } from 'react';
 export default class NavBar extends Component {
   render() {
     const { active, scroll } = this.props;
-    console.log(active);
     return (
       <div>
         <ul className='navBar'>
@@ -13,10 +12,16 @@ export default class NavBar extends Component {
               (active === 'carousel') ?
                 <a className = 'pages'>
                   Top
-                <img id='top-active' src='./images/barberos-seal.png' onClick = {scroll.bind(this, 'splash-carousel')}/>
+                  <img 
+                    id='top-active' 
+                    src='./images/barberos-seal.png' 
+                    onClick = {scroll.bind(this, 'splash-carousel')}/>
                 </a> :
                 <a >
-                  <img id='top-menu' src='./images/barberos-seal-white.png' onClick = {scroll.bind(this,'splash-carousel')}/>
+                  <img 
+                    id='top-menu' 
+                    src='./images/barberos-seal-white.png' 
+                    onClick = {scroll.bind(this,'splash-carousel')}/>
                 </a>
             }
           </li>
@@ -26,10 +31,16 @@ export default class NavBar extends Component {
               (active === 'info') ?
                 <a className = 'pages'>
                   Shop
-                  <img id='info-active' src='./images/barber-pole-gold.png' onClick = {scroll.bind(this, 'info-page')}/>
+                  <img 
+                    id='info-active' 
+                    src='./images/barber-pole-gold.png' 
+                    onClick = {scroll.bind(this, 'info-page')}/>
                 </a> :
                 <a >
-                  <img id='info-menu' src='./images/barber-pole-white.png' onClick = {scroll.bind(this, 'info-page')}/>
+                  <img 
+                    id='info-menu' 
+                    src='./images/barber-pole-white.png' 
+                    onClick = {scroll.bind(this, 'info-page')}/>
                 </a>
             }
           </li>
@@ -39,25 +50,37 @@ export default class NavBar extends Component {
               (active === 'bio') ?
                 <a className = 'pages'> 
                   Barbers
-                  <img id = 'bio-active' src='./images/mustache-gold.png' onClick = {() => scroll.bind(this, 'bio-page')}/>
+                  <img 
+                    id = 'bio-active' 
+                    src='./images/mustache-gold.png' 
+                    onClick = {scroll.bind(this, 'bio-page')}/>
                 </a> :
                 <a >
-                  <img id = 'bio-menu' src='./images/mustache-white.png' onClick = {scroll.bind(this, 'bio-page')}/>
+                  <img 
+                    id = 'bio-menu' 
+                    src='./images/mustache-white.png' 
+                    onClick = {scroll.bind(this, 'bio-page')}/>
                 </a>
             }
           </li>
-          {/* <li>
+          <li>
             {
               (active === 'services') ?
                 <a className = 'pages'> 
-                  Barbers
-                  <img id = 'services-active' src='./images/knife-gold.png' onClick = {() => scroll.bind(this, 'services-page')}/>
+                  Services
+                  <img 
+                    id = 'services-active' 
+                    src='./images/knife-gold.png' 
+                    onClick = {scroll.bind(this, 'services-page')}/>
                 </a> :
                 <a >
-                  <img id = 'services-menu' src='./images/knife-white.png' onClick = {scroll.bind(this, 'services-page')}/>
+                  <img 
+                    id = 'services-menu' 
+                    src='./images/knife-white.png' 
+                    onClick = {scroll.bind(this, 'services-page')}/>
                 </a>
             }
-          </li> */}
+          </li>
         </ul>
       </div>
     )

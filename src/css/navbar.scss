@@ -9,20 +9,17 @@
   margin-bottom: auto;
 }
 
-#top-menu, #info-menu, #bio-menu {
+#top-menu, #info-menu, #bio-menu, #services-menu {
   opacity: .5;
   margin: 1.2em;
 }
 #top-menu:hover, #info-menu:hover, #bio-menu:hover, #services-menu:hover {
   opacity:.7;
 }
-#top-menu {
+#top-menu, #bio-menu {
   width: 50px;
 }
-#bio-menu {
-  width: 50px;
-}
-#info-menu {
+#info-menu, #services-menu {
   width: 20px;
 }
 #info-active, #bio-active, #top-active, #services-active {
@@ -31,6 +28,10 @@
 }
 #info-active {
   width: 35px;
+}
+
+#services-active {
+  width: 30px;
 }
 #bio-active {
   width: 80px;

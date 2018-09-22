@@ -14,9 +14,7 @@ export default class Bio extends Component {
         <div className="container bio-container">
           <div className="row bio-top-row">
             <div className="col-lg-12 text-center">
-              <div className="about-header">
-                Barbers
-              </div>
+            <img src = './images/barbers.png' alt = 'Barbers Header' className = 'bio-title'/>              
             </div>
           </div>
 

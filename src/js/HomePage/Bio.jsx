@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReactGA from 'react-ga';
 
 export default class Bio extends Component {
   componentDidMount() {
@@ -8,13 +9,19 @@ export default class Bio extends Component {
     window.scroll = function () { scrollFunction() }
   }
 
+  clickLink(link) {
+    ReactGA.event({
+      category: 'clicked on social tabs',
+      event: `clicked on Omar's ${link}`
+    })
+  }
   render() {
     return (
       <div className='full-page' id='bio-page'>
         <div className="container bio-container">
           <div className="row bio-top-row">
             <div className="col-lg-12 text-center">
-            <img src = './images/barbers.png' alt = 'Barbers Header' className = 'bio-title'/>              
+              <img src='./images/barbers.png' alt='Barbers Header' className='bio-title' />
             </div>
           </div>
 
@@ -26,13 +33,25 @@ export default class Bio extends Component {
             </div>
 
             <div className="col-xl-4 col-md-12 bio-photo-div">
-              <img src='./images/omar-profile-photo.jpg' alt = 'Omar Menenses profile photo' className='bio-photo' />
+              <img src='./images/omar-profile-photo.jpg' alt='Omar Menenses profile photo' className='bio-photo' />
             </div>
-            <div className="col-xl-8 col-md-12">
+            <div className="col-xl-7 col-md-12">
+            <span className='bio-text'>Specializes in - Fades, all scissor haircuts, hot towel straight razor shaves.</span>
               <p className='bio-text'>
-                I was raised in San Diego, am a highly skilled barber with 9+ years of experience. I have always loved doing hair and I specialize in hot towel shaves. I have a passion for doing this wether its a fade or a scissor haircut, you can be confident that I will always deliver quality work.
+                I was born and raised in San Diego. I originally became a barber as an extra source of income after my first son was born. The more I cut hair, the more I began to love it and I eventually quit my job to do this full-time. With time, I found out that my father and great grandfather were barbers at specific times of their lives. It has been 10 years since I switched my career paths and it has changed my life. The relationships that I have created my clients have encouraged me to open up this shop and I stand by my work as a Barber and owner. 
                   </p>
             </div>
+            <div className='col-xl-1 col-md-12 social-tags'>
+              <a  href='https://www.instagram.com/omar_619_barber/'     target='_blank'
+                  onClick={() => this.clickLink('instagram')}>
+                <img src='./images/insta-icon.png' className='footer-icons' />
+              </a>
+              <a  href='https://www.facebook.com/omar.meneses.1675'     target='_blank'
+                  onClick={() => this.clickLink('facebook')}>
+                <img src='./images/facebook-icon.png'           className='footer-icons' id='facebook-icon' />
+              </a>
+            </div>
+            
           </div>
 
 
@@ -41,18 +60,22 @@ export default class Bio extends Component {
               <div className="bio-header">
                 <h3><u>Noah</u></h3>
               </div>
-              <span>Starting Sept. 23rd</span>
             </div>
 
             <div className="col-xl-4 col-md-12  bio-photo-div">
-              <img src='./images/noah-profile-photo.jpg' alt = 'Noah profile photo' className='bio-photo' />
+              <img src='./images/noah-profile-photo.jpg' alt='Noah profile photo' className='bio-photo' />
             </div>
-            <div className="col-xl-8 col-md-12 ">
+            <div className="col-xl-7 col-md-12 social-tags">        
               <p className='bio-text'>
                 Born and raised in Northern California, the Bay Area. I first became interested in cutting hair when my older cousin would cut my hair as a kid. When I got into high school I then started cutting my own hair. Soon enough I started cutting my brother's, cousin's,  friends and friends of friends hair. Giving that clean cut has always been an art that I have always appreciated. I put my heart and soul into my craft and to try to make you look good, as well as feel good! To me barbering is more than just cutting hair, but creating relationships and giving the next person a boost of confidence!
                   </p>
             </div>
-
+            <div className='col-xl-1 col-md-12 social-tags'>
+              <a  href='https://www.instagram.com/knowabarber/'         target='_blank'
+                  onClick={() => this.clickLink('instagram')}>
+                <img src='./images/insta-icon.png' className='footer-icons' />
+              </a>
+            </div>
 
           </div>
         </div>

@@ -40,7 +40,13 @@
   margin-left: auto;
 }
 
-
+.social-tags img {
+  width: 40px;
+  margin: 1em;
+}
+.social-tags img:hover {
+  opacity: .8;
+}
 
 @media screen and (max-width: $sm - 1) {
   .bio-photo-div {

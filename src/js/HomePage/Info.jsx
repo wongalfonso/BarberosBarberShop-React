@@ -41,7 +41,7 @@ export default class Info extends Component {
             <div className="col-12 text-center">
               <span id = 'barber-shop-tag' style={{ color: 'white' }}><u>The Barber Shop</u></span>
               <div className='about-shop'>
-                This is a new Barber Shop located in the North Park area of San Diego. At the Barberos Barbershop, we take pride in our clean haircuts and traditional hot towel shaves. Our mission is to provide top of the line customer service that is why every client gets a personalized consultation. Come visit us and experience it for yourself!
+                This is a Barber Shop located in the North Park area of San Diego. At the Barberos Barbershop, we take pride in our clean haircuts and traditional hot towel shaves. Our mission is to provide top of the line customer service that is why every client gets a personalized consultation. Come visit us and experience it for yourself!
               </div>
             </div>
             <div className="col-xl-7 col-lg-12 text-center">

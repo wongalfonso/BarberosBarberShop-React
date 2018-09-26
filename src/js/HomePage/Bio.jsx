@@ -38,7 +38,7 @@ export default class Bio extends Component {
             <div className="col-xl-7 col-md-12">
             <span className='bio-text'>Specializes in - Fades, all scissor haircuts, hot towel straight razor shaves.</span>
               <p className='bio-text'>
-                I was born and raised in San Diego. I originally became a barber as an extra source of income after my first son was born. The more I cut hair, the more I began to love it and I eventually quit my job to do this full-time. With time, I found out that my father and great grandfather were barbers at specific times of their lives. It has been 10 years since I switched my career paths and it has changed my life. The relationships that I have created my clients have encouraged me to open up this shop and I stand by my work as a Barber and owner. 
+                I was raised in San Diego and originally became a barber as an extra source of income after my first son was born. The more I cut hair, the more I began to love it and I eventually quit my job to do this full-time. With time, I found out that my father and great grandfather were barbers at specific times of their lives. It has been 10 years since I switched my career paths and it has changed my life. The relationships that I have created my clients have encouraged me to open up this shop and I stand by my work as a Barber and owner. 
                   </p>
             </div>
             <div className='col-xl-1 col-md-12 social-tags'>

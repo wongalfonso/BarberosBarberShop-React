@@ -28,12 +28,8 @@ export default class Services extends Component {
               <tbody>
                 <tr>
                   <td className = 'description'>Mens Hair Cut</td>
-                  <td className = 'price'>$35.00</td>
-                </tr>
-                <tr>
-                  <td className = 'description'>Buzz Hair Cut</td>
-                  <td className = 'price'>$25.00</td>
-                </tr>
+                  <td className = 'price'>$35.00 | $5 off October & November</td>
+                </tr>                
                 <tr>
                   <td className = 'description'>Mens Long Hair Scissor Cut</td>
                   <td className = 'price'>$40.00</td>

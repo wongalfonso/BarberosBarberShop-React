@@ -3,6 +3,7 @@ const morgan = require('morgan');
 const path = require('path');
 const fs = require('fs');
 const dateFormat = require("dateformat");
+const compression = require('compression');
 
 const app = express();
 let template = 'Agent, Time, Method, Resource, Version, Status';

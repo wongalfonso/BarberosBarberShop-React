@@ -39,7 +39,7 @@ if ("NODE_ENV" !== "production") {
 app.use(express.static('public'));
 app.use(express.static('dist'));
 app.use(compression({
-  level: 9,
+  level: 3,
   filter: shouldCompress
 }));
 app.use(logger);

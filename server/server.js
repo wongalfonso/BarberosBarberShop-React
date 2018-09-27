@@ -6,7 +6,6 @@ const dateFormat = require("dateformat");
 const compression = require('compression');
 
 const app = express();
-let template = 'Agent, Time, Method, Resource, Version, Status';
 
 function logger(req, res, next) {
   if (req.method == 'GET') {
@@ -30,9 +29,19 @@ function logger(req, res, next) {
   }
   next();
 }
-app.use(morgan('dev'));
+function shouldCompress(req,res) {
+  if (req.headers["x-no-compression"]) return false;
+  return compression.filter(req,res);
+}
+if ("NODE_ENV" !== "production") {
+  app.use(morgan('dev'));
+}
 app.use(express.static('public'));
 app.use(express.static('dist'));
+app.use(compression({
+  level: 9,
+  filter: shouldCompress
+}));
 app.use(logger);
 
 app.get('*.js', (req,res,next) => {

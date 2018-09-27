@@ -70,6 +70,13 @@ export default class HomePage extends Component {
       window.location = 'https://www.schedulicity.com/scheduling/TBB65N'
     })
   }
+  gaEvent(location) {
+    console.log(location);
+    // ReactGA.event({
+    //   category: 'click link in footer',
+    //   action: `link in footer to ${location}` 
+    // });
+  }
   render() {
     
     return (
@@ -96,7 +103,8 @@ export default class HomePage extends Component {
           enter = {this.mouseEnter}
           exit = {this.mouseExit}
         />
-        <Footer />
+        <Footer 
+          event = {this.gaEvent}/>
       </div>
     )
   }

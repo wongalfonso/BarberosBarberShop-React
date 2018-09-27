@@ -97,6 +97,9 @@
   background-position: center;
 }
 @media screen and (max-width: $sm - 1) {
+  .carousel-inner:after {
+    background-color: rgba(0,0,0,.55);
+  }
   .carousel-lg, .carousel-md {
     display: none !important;
   }
@@ -111,7 +114,7 @@
   #top-bar {
     min-height:144px;
     display: inline-flex;
-    height: 190px;
+    height: 160px;
     #barberos-logo {
       width: 90%;
       max-width: 400px;

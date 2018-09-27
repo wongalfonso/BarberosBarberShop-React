@@ -1,6 +1,15 @@
 import React, { Component } from 'react';
 import ReactGA from 'react-ga';
 
+// const goldColor = {
+//   background: '-webkit-linear-gradient(left, rgb(164, 139, 0) , rgb(230, 196, 5))',
+//    background: '-o-linear-gradient(right, rgb(164, 139, 0), rgb(230, 196, 5))',
+//    background: '-moz-linear-gradient(right, rgb(164, 139, 0), rgb(230, 196, 5))',
+//    background: 'linear-gradient(to right, rgb(164, 139, 0), rgb(230, 196, 5))',
+//   webkitBackgroundClip: 'text',
+//   webkitTextFillColor: 'transparent',
+//   // color: 'rgb(164, 139, 0)'
+// }
 export default class Services extends Component {
 
   componentDidMount() {
@@ -23,16 +32,26 @@ export default class Services extends Component {
           </div>
 
         <div className="row services-middle-row">
-          <div className="col-12">          
+          <div className="col-12">       
+          <div className = 'text-center color'><b>* $5 Dollars Off First Time customer</b></div>   
             <table className = 'table text-center'>
               <tbody>
                 <tr>
                   <td className = 'description'>Mens Hair Cut</td>
-                  <td className = 'price'>$35.00 | $5 off October & November</td>
+                  <td className = 'price color'>
+                      <b>* $30.00 </b></td>
+                </tr>
+                <tr>
+                  <td className = 'description'>Womans Short Hair Cut</td>
+                  <td className = 'price color'>
+                      <b>* $30.00</b>
+                  </td>
                 </tr>                
                 <tr>
                   <td className = 'description'>Mens Long Hair Scissor Cut</td>
-                  <td className = 'price'>$40.00</td>
+                  <td className = 'price color'>
+                      <b>* $35.00 </b>
+                  </td>
                 </tr>
                 <tr>
                   <td className = 'description'>Kids Hair Cut</td>
@@ -41,22 +60,24 @@ export default class Services extends Component {
                 <tr>
                   <td className = 'description'>Line Up</td>
                   <td className = 'price'>$15.00</td>
-                </tr>
-                <tr>
-                  <td className = 'description'>Once a week client Mens Hair Cut</td>
-                  <td className = 'price'>$30.00</td>
-                </tr>
+                </tr>                
                 <tr>
                   <td className = 'description'>Cut and Beard</td>
-                  <td className = 'price'>$45.00</td>
+                  <td className = 'price color'>
+                      <b>* $40.00 </b>
+                  </td>
                 </tr>
                 <tr>
                   <td className = 'description'>Haircut and Classic Shave</td>
-                  <td className = 'price'>$65.00</td>
+                  <td className = 'price color'>
+                      <b>$60.00 | $10 off first time customer</b>
+                  </td>
                 </tr>
                 <tr>
                   <td className = 'description'>Classic Shave</td>
-                  <td className = 'price'>$40.00</td>
+                  <td className = 'price color'>
+                      <b>* $35.00 </b>
+                  </td>
                 </tr>
                 <tr>
                   <td className = 'description'>Beard Trim and Beard Line-up</td>

@@ -34,25 +34,24 @@ export default class Services extends Component {
         <div className="row services-middle-row">
           <div className="col-12">       
           <div className = 'text-center'><h4>Hair Cuts</h4></div>
-          <div className = 'text-center color'><b>* $5 Dollars Off First TWO visits</b></div> 
-          <div className = 'text-center color'><b>** First Time Visitor Special || Monday & Tuesday $20</b></div>
             <table className = 'table text-center'>
               <tbody>
                 <tr>
                   <td className = 'description'>Men's Hair Cut</td>
                   <td className = 'price color'>
-                      <b>* $30.00 </b></td>
+                    <b>$30.00 || $5 off first TWO visits</b>
+                  </td>
                 </tr>
                 <tr>
                   <td className = 'description'>Woman's Short Hair Cut</td>
                   <td className = 'price color'>
-                      <b>* $30.00</b>
+                    <b>$30.00 || $5 off first TWO visits</b>
                   </td>
                 </tr>                
                 <tr>
                   <td className = 'description'>Men's Long Hair Scissor Cut</td>
                   <td className = 'price color'>
-                      <b>** $30.00 </b>
+                      <b>$30.00 || Mon and Tues Special $5 off first time Visitor</b>
                   </td>
                 </tr>
                 <tr>

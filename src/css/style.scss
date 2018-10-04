@@ -8,7 +8,7 @@
 @import './services.scss';
 @import './footer.scss';
 
-.html, body {
+html, body {
   width: 100%;
   height: 100%;
   padding: 0;
@@ -29,14 +29,28 @@ body {
 .fullPage {
   height: 100%;
 }
-
-
+.err {
+  position: absolute;    
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
 
 @media only screen and (max-width: $md - 1) {
   body {
     background: linear-gradient(to right, rgb(10, 10, 10), black, rgb(20, 20, 20));
     background: -moz-linear-gradient(to right, rgb(10, 10, 10), black, rgb(20, 20, 20));
   }
+  .err {
+    .err-code {
+      font-size: 150px;
+    }
+    .err-message{    
+      font-size: 20px;
+    }
+  }
+  
 }
 
 
@@ -45,11 +59,26 @@ body {
     background: linear-gradient(to right, rgb(10, 10, 10), black, rgb(20, 20, 20));
     background: -moz-linear-gradient(to right, rgb(10, 10, 10), black, rgb(20, 20, 20));
   }
+  .err {    
+    .err-code {
+      font-size: 350px;
+    }
+    .err-message{    
+      font-size: 50px;
+    }
+  }
 }
 
 
 @media only screen and (min-width: $lg) and (max-width: $xl - 1) {
-
+  .err {    
+    .err-code {
+      font-size: 350px;
+    }
+    .err-message{    
+      font-size: 50px;
+    }
+  }
 }
 
 
@@ -58,5 +87,12 @@ body {
   .fullPage {
     height: 100vh;
   }
- 
+  .err {    
+    .err-code {
+      font-size: 350px;
+    }
+    .err-message{    
+      font-size: 50px;
+    }
+  }
 }

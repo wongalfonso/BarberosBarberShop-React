@@ -6,6 +6,7 @@ import { faPhone, faMapMarker, faEnvelope } from '@fortawesome/free-solid-svg-ic
 import ReactGA from 'react-ga';
 import ComingSoon from './js/ComingSoon';
 import HomePage from './js/HomePage/HomePage';
+import Err from './js/Err';
 
 library.add(faPhone, faMapMarker, faEnvelope)
 
@@ -27,6 +28,7 @@ export default class App extends Component {
       <Router>
         <Switch>
           <Route exact path='/' component={HomePage} />
+          <Route path='*' component={Err} />
         </Switch>
       </Router>
     )

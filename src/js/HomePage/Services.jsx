@@ -51,7 +51,7 @@ export default class Services extends Component {
                 <tr>
                   <td className = 'description'>Men's Long Hair Scissor Cut</td>
                   <td className = 'price color'>
-                      <b>$30.00 || Mon and Tues Special $5 off first time Visitor</b>
+                      <b>$30.00 || Mon and Tues Special $5 off first time visitor</b>
                   </td>
                 </tr>
                 <tr>
@@ -74,13 +74,13 @@ export default class Services extends Component {
                   </td>
                 </tr>
                 <tr>
-                  <td className = 'description'>Cut and Beard lineup with Hot Towel</td>
+                  <td className = 'description'>Cut and Beard Line Up with Hot Towel</td>
                   <td className = 'price'>
                     $40.00
                   </td>
                 </tr>
                 <tr>
-                  <td className = 'description'>The Barberos Cut & Beard line up</td>
+                  <td className = 'description'>The Barberos Cut & Beard Line Up</td>
                   <td className = 'price'>
                     $35.00 - <i>Electric Shave</i>
                   </td>
@@ -92,7 +92,7 @@ export default class Services extends Component {
                   </td>
                 </tr>                                
                 <tr>
-                  <td className = 'description'>Beard lineup & trim with Hot Towel</td>
+                  <td className = 'description'>Beard Line Up & trim with Hot Towel</td>
                   <td className = 'price'>
                     $25.00
                   </td>

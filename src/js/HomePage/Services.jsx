@@ -39,18 +39,18 @@ export default class Services extends Component {
             <table className = 'table text-center'>
               <tbody>
                 <tr>
-                  <td className = 'description'>Mens Hair Cut</td>
+                  <td className = 'description'>Men's Hair Cut</td>
                   <td className = 'price color'>
                       <b>* $30.00 </b></td>
                 </tr>
                 <tr>
-                  <td className = 'description'>Womans Short Hair Cut</td>
+                  <td className = 'description'>Woman's Short Hair Cut</td>
                   <td className = 'price color'>
                       <b>* $30.00</b>
                   </td>
                 </tr>                
                 <tr>
-                  <td className = 'description'>Mens Long Hair Scissor Cut</td>
+                  <td className = 'description'>Men's Long Hair Scissor Cut</td>
                   <td className = 'price color'>
                       <b>** $30.00 </b>
                   </td>

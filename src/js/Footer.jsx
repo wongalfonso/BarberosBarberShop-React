@@ -20,12 +20,6 @@ const Footer = ({event}) => {
                   onClick = {() => event('facebook')}>
                 <img src='./images/facebook-icon.png' className = 'footer-icons' id = 'facebook-icon'/>
               </a>
-              <a href='https://www.yelp.com/biz/the-barberos-barber-shop-san-diego?osq=the+barberos+barbershop' 
-                  target = '_blank'
-                  onClick = {() => event('yelp')}>
-                <img src='./images/yelp-icon.png' className = 'footer-icons'/>
-              </a>
-
             </div>
           </div>
         </div>

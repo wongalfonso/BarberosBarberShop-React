@@ -33,7 +33,9 @@ export default class Services extends Component {
 
         <div className="row services-middle-row">
           <div className="col-12">       
-          <div className = 'text-center color'><b>* $5 Dollars Off First Time customer</b></div>   
+          <div className = 'text-center'><h4>Hair Cuts</h4></div>
+          <div className = 'text-center color'><b>* $5 Dollars Off First TWO visits</b></div> 
+          <div className = 'text-center color'><b>** First Time Visitor Special || Monday & Tuesday $20</b></div>
             <table className = 'table text-center'>
               <tbody>
                 <tr>
@@ -50,7 +52,7 @@ export default class Services extends Component {
                 <tr>
                   <td className = 'description'>Mens Long Hair Scissor Cut</td>
                   <td className = 'price color'>
-                      <b>* $35.00 </b>
+                      <b>** $30.00 </b>
                   </td>
                 </tr>
                 <tr>
@@ -60,29 +62,49 @@ export default class Services extends Component {
                 <tr>
                   <td className = 'description'>Line Up</td>
                   <td className = 'price'>$15.00</td>
-                </tr>                
+                </tr>
+              </tbody>
+            </table>
+            <div className = 'text-center'><h4>All About The Beard</h4></div>   
+            <table className = 'table text-center'>
+              <tbody>
                 <tr>
-                  <td className = 'description'>Cut and Beard</td>
-                  <td className = 'price color'>
-                      <b>* $40.00 </b>
+                  <td className = 'description'>The Barberos Haircut and Classic Shave</td>
+                  <td className = 'price'>
+                    $50.00
                   </td>
                 </tr>
                 <tr>
-                  <td className = 'description'>Haircut and Classic Shave</td>
-                  <td className = 'price color'>
-                      <b>$60.00 | $10 off first time customer</b>
+                  <td className = 'description'>Cut and Beard lineup with Hot Towel</td>
+                  <td className = 'price'>
+                    $40.00
+                  </td>
+                </tr>
+                <tr>
+                  <td className = 'description'>The Barberos Cut & Beard line up</td>
+                  <td className = 'price'>
+                    $35.00 - <i>Electric Shave</i>
                   </td>
                 </tr>
                 <tr>
                   <td className = 'description'>Classic Shave</td>
                   <td className = 'price color'>
-                      <b>* $35.00 </b>
+                    <b>$30.00 || $5 off first time customer</b>
                   </td>
-                </tr>
+                </tr>                                
                 <tr>
-                  <td className = 'description'>Beard Trim and Beard Line-up</td>
-                  <td className = 'price'>$25.00</td>
-                </tr>
+                  <td className = 'description'>Beard lineup & trim with Hot Towel</td>
+                  <td className = 'price'>
+                    $25.00
+                  </td>
+                </tr>                               
+                
+                <tr>
+                  <td className = 'description'>Beard Line Up & Trim</td>
+                  <td className = 'price'>
+                    $20.00 - <i>Electric Shave</i>
+                  </td>
+                </tr> 
               </tbody>
             </table>
         </div>

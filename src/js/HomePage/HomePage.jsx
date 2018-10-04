@@ -21,10 +21,6 @@ export default class HomePage extends Component {
     this.scroller = this.scroller.bind(this);
   }
 
-  componentDidMount() {
-    
-  }
-
   componentDidUpdate() {
     window.onscroll = () => this.scroller();
   }

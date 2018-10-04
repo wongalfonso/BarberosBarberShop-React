@@ -39,19 +39,19 @@ export default class Services extends Component {
                 <tr>
                   <td className = 'description'>Men's Hair Cut</td>
                   <td className = 'price color'>
-                    <b>$30.00 || $5 off first TWO visits</b>
+                    <b>$25.00 || first TWO visits</b>
                   </td>
                 </tr>
                 <tr>
                   <td className = 'description'>Woman's Short Hair Cut</td>
                   <td className = 'price color'>
-                    <b>$30.00 || $5 off first TWO visits</b>
+                    <b>$25.00 || first TWO visits</b>
                   </td>
                 </tr>                
                 <tr>
                   <td className = 'description'>Men's Long Hair Scissor Cut</td>
-                  <td className = 'price color'>
-                      <b>$30.00 || Mon and Tues Special $5 off first time visitor</b>
+                  <td className = 'price'>
+                      <b className = 'color'>$30.00</b> || Mon and Tues Special $5 off first time visitor - By Online Appt. Only!
                   </td>
                 </tr>
                 <tr>

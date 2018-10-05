@@ -49,9 +49,13 @@ export default class Services extends Component {
                   </td>
                 </tr>                
                 <tr>
-                  <td className = 'description'>Men's Long Hair Scissor Cut</td>
+                  <td className = 'description'>
+                    <div><i>Monday & Tues Special</i></div>
+                    <div>Men's Long Hair Scissor Cut</div>
+                  </td>
                   <td className = 'price'>
-                      <b className = 'color'>$30.00</b> || Mon and Tues Special $5 off first time visitor - By Online Appt. Only!
+                      <div><i>First time visitor - By Online Appointment Only!</i></div>  
+                      <div><b className = 'color'>$20.00</b></div>
                   </td>
                 </tr>
                 <tr>

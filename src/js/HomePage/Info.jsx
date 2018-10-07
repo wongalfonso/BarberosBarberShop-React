@@ -104,12 +104,12 @@ export default class Info extends Component {
                   </tr>
                   <tr>
                     <td className = 'icons'>
-                      <a href='tel:+16193664149' onClick = {() => this.linkClick('phone')}>
+                      <a href='tel:+16192463830' onClick = {() => this.linkClick('phone')}>
                       <FontAwesomeIcon icon = 'phone'/>
                       </a>
                     </td>
                     <td className='info-shop'>
-                      <a  href='tel:+16193664149' 
+                      <a  href='tel:+16192463830' 
                           onClick = {() => this.linkClick('phone')}>
                         1 (619) 246-3830
                       </a>

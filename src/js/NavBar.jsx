@@ -14,7 +14,7 @@ export default class NavBar extends Component {
                   Top
                   <img 
                     id='top-active' 
-                    src='./images/barberos-seal.png' 
+                    src='./images/barberos-seal.svg' 
                     onClick = {scroll.bind(this, 'splash-carousel')}/>
                 </a> :
                 <a >

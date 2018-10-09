@@ -49,8 +49,7 @@ export default class Services extends Component {
                   </td>
                 </tr>                
                 <tr>
-                  <td className = 'description'>
-                    <div><i>Monday & Tues Special</i></div>
+                  <td className = 'description'>                    
                     <div>Men's Long Hair Scissor Cut</div>
                   </td>
                   <td className = 'price'>

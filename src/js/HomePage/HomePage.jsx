@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import ReactGA from 'react-ga';
 import Carousel from './Carousel';
 import Info from './Info';
-import Loading from '../Loading';
 import NavBar from '../NavBar';
 import Bio from './Bio';
 import Pricing from './Services';
@@ -53,11 +52,9 @@ export default class HomePage extends Component {
 
 
   scroller() {
-    // console.log('yes');
     const home = document.getElementById('home-page');
     const carousel = document.getElementById('splash-carousel');
     const info = document.getElementById('info-page');
-    // console.log(carousel.scrollHeight);
   }
   schedule(location) {
     ReactGA.outboundLink({
@@ -76,8 +73,7 @@ export default class HomePage extends Component {
   render() {
     
     return (
-      <div className='home-page' id = 'home-page'>        
-        {/* <Loading/> */}
+      <div className='home-page' id = 'home-page'>                
         <NavBar
           active={this.state.enter}
           menu={this.state.exit}

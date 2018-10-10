@@ -36,6 +36,18 @@ body {
   transform: translate(-50%, -50%);
   text-align: center;
 }
+.err-btn {
+  background-color: $infoColor;
+  margin: 1em 0;
+  height: 50px;
+  width: 200px;  
+}
+.err-btn:hover {
+  opacity: .8;
+}
+.arrow-icon {
+  width: 20px;
+}
 
 @media only screen and (max-width: $md - 1) {
   body {

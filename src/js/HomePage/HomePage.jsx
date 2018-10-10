@@ -46,6 +46,10 @@ export default class HomePage extends Component {
       var id = document.getElementById(target).offsetTop
             
       window.scrollTo({ top: id, behavior: 'smooth' })
+      ReactGA.event({
+        category: 'page',
+        action: page
+      });
       this.setState({ enter: page })
     }
   }

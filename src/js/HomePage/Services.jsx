@@ -1,23 +1,12 @@
 import React, { Component } from 'react';
-import ReactGA from 'react-ga';
 
-// const goldColor = {
-//   background: '-webkit-linear-gradient(left, rgb(164, 139, 0) , rgb(230, 196, 5))',
-//    background: '-o-linear-gradient(right, rgb(164, 139, 0), rgb(230, 196, 5))',
-//    background: '-moz-linear-gradient(right, rgb(164, 139, 0), rgb(230, 196, 5))',
-//    background: 'linear-gradient(to right, rgb(164, 139, 0), rgb(230, 196, 5))',
-//   webkitBackgroundClip: 'text',
-//   webkitTextFillColor: 'transparent',
-//   // color: 'rgb(164, 139, 0)'
-// }
 export default class Services extends Component {
 
   componentDidMount() {
     const page = document.getElementById('services-page');
     page.onmouseenter = () => this.props.enter('services');
     page.onmouseleave = () => this.props.exit('services');
-    window.scroll = function() {scrollFunction()} 
-    // page.hasFocus = () => console.log('yes');
+    window.scroll = function() {scrollFunction()}     
   }
 
 
@@ -27,7 +16,7 @@ export default class Services extends Component {
         <div className="container services-container">        
           <div className="row services-top-row">
             <div className="col-lg-12 text-center">
-            <img src = './images/services.png' alt = 'Services Header' id = 'services-title'/>              
+            <img src = './images/services.svg' alt = 'Barber Shop Services Header' id = 'services-title'/>              
             </div>
           </div>
 

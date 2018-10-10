@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-
 export default class NavBar extends Component {
   render() {
     const { active, scroll } = this.props;
@@ -12,15 +11,17 @@ export default class NavBar extends Component {
               (active === 'carousel') ?
                 <a className = 'pages'>
                   Top
-                  <img 
+                  <img
                     id='top-active' 
-                    src='./images/barberos-seal.svg' 
+                    src= './images/barber-seal.svg'
+                    alt = 'barberos seal'
                     onClick = {scroll.bind(this, 'splash-carousel')}/>
                 </a> :
                 <a >
                   <img 
                     id='top-menu' 
-                    src='./images/barberos-seal-white.png' 
+                    src='./images/barber-seal-white.svg' 
+                    alt = 'barberos seal'
                     onClick = {scroll.bind(this,'splash-carousel')}/>
                 </a>
             }
@@ -33,13 +34,15 @@ export default class NavBar extends Component {
                   Shop
                   <img 
                     id='info-active' 
-                    src='./images/barber-pole-gold.png' 
+                    src='./images/barber-pole-gold.svg' 
+                    alt = 'barberos pole gold'
                     onClick = {scroll.bind(this, 'info-page')}/>
                 </a> :
                 <a >
                   <img 
                     id='info-menu' 
-                    src='./images/barber-pole-white.png' 
+                    src='./images/barber-pole-white.svg' 
+                    alt = 'barberos pole white'
                     onClick = {scroll.bind(this, 'info-page')}/>
                 </a>
             }
@@ -52,13 +55,15 @@ export default class NavBar extends Component {
                   Barbers
                   <img 
                     id = 'bio-active' 
-                    src='./images/mustache-gold.png' 
+                    src='./images/mustache-gold.svg' 
+                    alt = 'barberos mustache gold'
                     onClick = {scroll.bind(this, 'bio-page')}/>
                 </a> :
                 <a >
                   <img 
                     id = 'bio-menu' 
-                    src='./images/mustache-white.png' 
+                    src='./images/mustache-white.svg' 
+                    alt = 'barberos mustache white'
                     onClick = {scroll.bind(this, 'bio-page')}/>
                 </a>
             }
@@ -70,13 +75,15 @@ export default class NavBar extends Component {
                   Services
                   <img 
                     id = 'services-active' 
-                    src='./images/knife-gold.png' 
+                    src='./images/knife-gold.svg' 
+                    alt = 'barberos knife gold'
                     onClick = {scroll.bind(this, 'services-page')}/>
                 </a> :
                 <a >
                   <img 
                     id = 'services-menu' 
-                    src='./images/knife-white.png' 
+                    src='./images/knife-white.svg' 
+                    alt = 'barberos knife white'
                     onClick = {scroll.bind(this, 'services-page')}/>
                 </a>
             }

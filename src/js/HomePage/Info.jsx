@@ -33,8 +33,8 @@ export default class Info extends Component {
         <div className="container info-container">
           <div className="row info-top-row">
             <div className="col-12 text-center">
-              <img src='./images/title-large-screen.png' id='info-title-lg' alt = 'The Barberos Barbershop Header'/>
-              <img src='./images/title-small-screen.png' id='info-title-sm' alt = 'The Barberos Barbershop Header'/>
+              <img src='./images/title-large-screen.svg' id='info-title-lg' alt = 'The Barberos Barbershop Header'/>
+              <img src='./images/title-small-screen.svg' id='info-title-sm' alt = 'The Barberos Barbershop Header'/>
             </div>
           </div>
           <div className="row info-middle-row">
@@ -53,7 +53,7 @@ export default class Info extends Component {
             </div>
 
             <div className="col-xl-4 col-lg-6 col-md-5 info-hours">
-              <img src='./images/hours-title.png' id='info-hours-title' />
+              <img src='./images/info-hours-title.svg' alt = 'hours title' id='info-hours-title' />
               <table className='table info-table'>
                 <tbody>
                   <tr>

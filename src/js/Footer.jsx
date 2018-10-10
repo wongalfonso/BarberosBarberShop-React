@@ -14,11 +14,14 @@ const Footer = ({event}) => {
               <a  href='https://www.instagram.com/thebarberosbarbershop/'      target = '_blank'
                   onClick = {() => event('instagram')}
                   >
-                <img src='./images/insta-icon.png' className = 'footer-icons' />
+                <img src='./images/insta-icon.svg' 
+                  alt = 'barberos instagram icon ' 
+                  className = 'footer-icons' />
               </a>
               <a  href = 'https://www.facebook.com/thebarberosbarbershop'      target = '_blank'
                   onClick = {() => event('facebook')}>
-                <img src='./images/facebook-icon.png' className = 'footer-icons' id = 'facebook-icon'/>
+                <img src='./images/facebook-icon.svg' 
+                  alt = 'barberos facebook icon' className = 'footer-icons' id = 'facebook-icon'/>
               </a>
             </div>
           </div>

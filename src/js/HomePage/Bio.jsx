@@ -21,7 +21,7 @@ export default class Bio extends Component {
         <div className="container bio-container">
           <div className="row bio-top-row">
             <div className="col-lg-12 text-center">
-              <img src='./images/barbers.png' alt='Barbers Header' className='bio-title' />
+              <img src='./images/barbers.svg' alt='The Barberos Barber Header' className='bio-title' />
             </div>
           </div>
 
@@ -44,11 +44,13 @@ export default class Bio extends Component {
             <div className='col-xl-1 col-md-12 social-tags'>
               <a  href='https://www.instagram.com/omar_619_barber/'     target='_blank'
                   onClick={() => this.clickLink('instagram')}>
-                <img src='./images/insta-icon.png' className='footer-icons' />
+                <img src='./images/insta-icon.svg'
+                  alt = 'the barberos instagram icon' className='footer-icons' />
               </a>
               <a  href='https://www.facebook.com/omar.meneses.1675'     target='_blank'
                   onClick={() => this.clickLink('facebook')}>
-                <img src='./images/facebook-icon.png'           className='footer-icons' id='facebook-icon' />
+                <img src='./images/facebook-icon.svg'
+                  alt = 'the barberos facebook icon'           className='footer-icons' id='facebook-icon' />
               </a>
             </div>
             
@@ -63,7 +65,7 @@ export default class Bio extends Component {
             </div>
 
             <div className="col-xl-4 col-md-12  bio-photo-div">
-              <img src='./images/noah-profile-photo.jpg' alt='Noah profile photo' className='bio-photo' />
+              <img src='./images/noah-profile-photo.jpg' alt='Noahs profile photo' className='bio-photo' />
             </div>
             <div className="col-xl-7 col-md-12 social-tags">        
               <p className='bio-text'>
@@ -73,7 +75,8 @@ export default class Bio extends Component {
             <div className='col-xl-1 col-md-12 social-tags'>
               <a  href='https://www.instagram.com/knowabarber/'         target='_blank'
                   onClick={() => this.clickLink('instagram')}>
-                <img src='./images/insta-icon.png' className='footer-icons' />
+                <img src='./images/insta-icon.svg'
+                alt = 'barberos instagram icon' className='footer-icons' />
               </a>
             </div>
 

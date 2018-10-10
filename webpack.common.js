@@ -41,11 +41,23 @@ module.exports = {
         ]
       },
       {
-        test: /\.(png|jpg|svg)$/,
+        test: /\.(png|jpg)$/,
         use: [
           {loader: 'url-loader'},
           {loader: 'file-loader'}
         ]
+      },
+      {
+        test: /\.svg$/,
+        use: {
+          loader: 'svg-inline-loader',
+          options: [
+            {
+              classPrefix: false,
+              idPrefix: false
+            }
+          ]
+        }
       }
     ]
   }

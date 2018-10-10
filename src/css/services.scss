@@ -25,10 +25,20 @@
     table-layout: fixed; 
   }
 }
-
+.services-desc {
+  text-decoration: underline;
+  font-size: 2em;
+}
 @media screen and (max-width: $sm - 1) {
  #services-title {
-   width: 300px;
+    width: 300px;
+ }
+ .services-desc {
+    text-decoration: none;
+    margin-bottom: .5em;
+ }
+ .services-table {
+    border: solid 1px $infoColor;   
  }
 }
 

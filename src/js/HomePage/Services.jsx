@@ -22,8 +22,8 @@ export default class Services extends Component {
 
         <div className="row services-middle-row">
           <div className="col-12">       
-          <div className = 'text-center'><h4>Hair Cuts</h4></div>
-            <table className = 'table text-center'>
+          <div className = 'text-center services-desc'>Hair Cuts</div>
+            <table className = 'table text-center services-table'>
               <tbody>
                 <tr>
                   <td className = 'description'>Men's Hair Cut</td>
@@ -56,8 +56,8 @@ export default class Services extends Component {
                 </tr>
               </tbody>
             </table>
-            <div className = 'text-center'><h4>All About The Beard</h4></div>   
-            <table className = 'table text-center'>
+            <div className = 'text-center services-desc'>All About The Beard</div>   
+            <table className = 'table text-center services-table'>
               <tbody>
                 <tr>
                   <td className = 'description'>The Barberos Haircut and Classic Shave</td>

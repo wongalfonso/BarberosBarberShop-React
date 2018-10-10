@@ -196,6 +196,9 @@
     background-color: $infoColor;
     color: black;
   }
+  .carousel-control-next-icon {
+    margin-right: 10.5em;
+  }
 }
 @media screen and (min-width: $xl) {
   .full-page {
@@ -223,5 +226,9 @@
     #barberos-logo {
       width:500px;
     }
+  }
+
+  .carousel-control-next-icon {
+    margin-right: 10em;
   }
 }

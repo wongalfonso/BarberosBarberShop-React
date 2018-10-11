@@ -34,7 +34,7 @@ export default class Services extends Component {
                 <tr>
                   <td className = 'description'>Woman's Short Hair Cut</td>
                   <td className = 'price color'>
-                    <b>$25.00 || first TWO visits</b>
+                    <b>$25.00</b>
                   </td>
                 </tr>                
                 <tr>
@@ -43,7 +43,7 @@ export default class Services extends Component {
                   </td>
                   <td className = 'price'>
                       <div><i>First time visitor - By Online Appointment Only!</i></div>  
-                      <div><b className = 'color'>$20.00</b></div>
+                      <div><b className = 'color'>$30.00</b></div>
                   </td>
                 </tr>
                 <tr>

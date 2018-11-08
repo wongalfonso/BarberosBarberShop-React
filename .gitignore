@@ -6,4 +6,4 @@ dist
 .DS_store
 *.log
 /logs
-.pem
+*.pem

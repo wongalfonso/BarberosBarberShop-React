@@ -21,8 +21,9 @@ export default class Services extends Component {
           </div>
 
         <div className="row services-middle-row">
-          <div className="col-12">       
-          <div className = 'text-center services-desc'>Hair Cuts</div>
+          <div className="col-12 services-col">       
+            <div className = 'text-center services-desc'>Hair Cuts
+            </div>
             <table className = 'table text-center services-table'>
               <tbody>
                 <tr>
@@ -56,7 +57,8 @@ export default class Services extends Component {
                 </tr>
               </tbody>
             </table>
-            <div className = 'text-center services-desc'>All About The Beard</div>   
+            <div className = 'text-center services-desc'>All About The Beard
+            </div>   
             <table className = 'table text-center services-table'>
               <tbody>
                 <tr>
@@ -98,6 +100,11 @@ export default class Services extends Component {
                 </tr> 
               </tbody>
             </table>
+            <div className = 'text-center services-desc'>Payment Options
+            </div>
+          <div className = ''>
+            <p className = 'text-center payment-desc'>This is a Cash Only Establishment... We do have an ATM onsite for your convenience</p>
+          </div>
         </div>
           </div>
         </div>

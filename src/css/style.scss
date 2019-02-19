@@ -97,7 +97,7 @@ body {
 
 @media screen and (min-width: $xl)  {
   .fullPage {
-    height: 100vh;
+    min-height: 100vh;
   }
   .err {    
     .err-code {

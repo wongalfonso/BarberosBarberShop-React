@@ -44,6 +44,10 @@
 .social-tags img:hover {
   opacity: .8;
 }
+.barber-sign {
+  width: 350px;
+  margin-top: 1em;
+}
 
 @media screen and (max-width: $sm - 1) {
   .bio-photo-div {
@@ -62,6 +66,9 @@
   }
   .bio-title {
     width: 300px;
+  }  
+  .barber-sign {
+    width: 100%;
   }
 }
 @media screen and (min-width: $sm) and (max-width: $md - 1) {

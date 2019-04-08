@@ -202,7 +202,8 @@
 }
 @media screen and (min-width: $xl) {
   .full-page {
-    height: 100vh;
+    min-height: 100vh;
+    height: 100%;
   }
   .carousel-sm, .carousel-md {
     display: none !important;

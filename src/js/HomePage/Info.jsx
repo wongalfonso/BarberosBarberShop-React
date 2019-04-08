@@ -3,13 +3,29 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import ReactGA from 'react-ga';
 
 export default class Info extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      sign: false
+    }
+  }
 
   componentDidMount() {
     const page = document.getElementById('info-page');
     page.onmouseenter = () => this.props.enter('info');
     page.onmouseleave = () => this.props.exit('info');
     window.scroll = function() {scrollFunction()} 
-    // page.hasFocus = () => console.log('yes');
+    setInterval(() => {
+      let show;
+      if (this.state.sign) {
+        show = false
+      } else {
+        show = true
+      }
+      this.setState({
+        sign: show
+      })
+    }, 1000);
   }
 
   infoEnterAnimation() {
@@ -33,8 +49,13 @@ export default class Info extends Component {
         <div className="container info-container">
           <div className="row info-top-row">
             <div className="col-12 text-center">
-              <img src='./images/title-large-screen.svg' id='info-title-lg' alt = 'The Barberos Barbershop Header'/>
-              <img src='./images/title-small-screen.svg' id='info-title-sm' alt = 'The Barberos Barbershop Header'/>
+              {/* <img src='./images/title-large-screen.svg' id='info-title-lg' alt = 'The Barberos Barbershop Header'/>
+              <img src='./images/title-small-screen.svg' id='info-title-sm' alt = 'The Barberos Barbershop Header'/> */}
+              {this.state.sign ? 
+              <img src="./images/BarbersWantedBlack.png" alt="barber sign" className = 'barber-sign'/> 
+              :
+              <img src="./images/BarbersWantedWhite.png" alt="barber sign white" className = 'barber-sign'/>
+            }
             </div>
           </div>
           <div className="row info-middle-row">
@@ -82,7 +103,7 @@ export default class Info extends Component {
                   </tr>
                   <tr>
                     <td className='days'>Sunday</td>
-                    <td className='hours'>9am - 12:30pm</td>
+                    <td className='hours'>12pm - 7pm</td>
                   </tr>
                 </tbody>
               </table>              

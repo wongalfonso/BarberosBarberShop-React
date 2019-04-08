@@ -2,28 +2,13 @@ import React, { Component } from 'react';
 import ReactGA from 'react-ga';
 
 export default class Bio extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      sign: false
-    }
-  }
+  
   componentDidMount() {
     const page = document.getElementById('bio-page');
     page.onmouseenter = () => this.props.enter('bio');
     page.onmouseleave = () => this.props.exit('bio');
     window.scroll = function () { scrollFunction() }
-    setInterval(() => {
-      let show;
-      if (this.state.sign) {
-        show = false
-      } else {
-        show = true
-      }
-      this.setState({
-        sign: show
-      })
-    }, 1000);
+    
   }
 
   clickLink(link) {
@@ -38,12 +23,7 @@ export default class Bio extends Component {
         <div className="container bio-container">
           <div className="row bio-top-row">
             <div className="col-lg-12 text-center">
-              {/* <img src='./images/barbers.svg' alt='The Barberos Barber Header' className='bio-title' /> */}
-              {this.state.sign ? 
-              <img src="./images/BarbersWantedBlack.png" alt="barber sign" class = 'barber-sign'/> 
-              :
-              <img src="./images/BarbersWantedGold.png" alt="barber sign gold" class = 'barber-sign'/>
-            }
+              <img src='./images/barbers.svg' alt='The Barberos Barber Header' className='bio-title' />           
             </div>
           </div>
           <div className="row bio-row">

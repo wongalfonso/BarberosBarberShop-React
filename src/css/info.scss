@@ -83,7 +83,9 @@
 .info-btn-col {
   margin: 2em 0;
 }
-
+.barber-sign {
+  margin: 2em 0;
+}
 @media screen and (max-width: $sm - 1) {
   .container {
     padding-left: 30px;
@@ -254,7 +256,6 @@
     display: none;
   }
   .info-top-row {
-    height: 150px;
     margin-bottom: 2em;
   }  
   .info-middle-row {

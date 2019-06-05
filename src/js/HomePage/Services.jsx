@@ -29,7 +29,7 @@ export default class Services extends Component {
                 <tr>
                   <td className = 'description'>Men's Hair Cut</td>
                   <td className = 'price color'>
-                    <b>$25.00 || first TWO visits</b>
+                    <b>$25.00</b>
                   </td>
                 </tr>
                 <tr>

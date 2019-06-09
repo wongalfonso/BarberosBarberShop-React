@@ -103,7 +103,7 @@ export default class Info extends Component {
                   </tr>
                   <tr>
                     <td className='days'>Sunday</td>
-                    <td className='hours'>9a - 7pm</td>
+                    <td className='hours'>9am - 7pm</td>
                   </tr>
                 </tbody>
               </table>              
